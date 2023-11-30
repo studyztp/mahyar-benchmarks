@@ -1,0 +1,98 @@
+#include "include/roi.h"
+
+#if defined(PAPI)
+#include <stdio.h>
+#include <pthread.h>
+#include "papi.h"
+
+void annotate_init_()
+{
+    int retval = PAPI_library_init(PAPI_VER_CURRENT);
+    if (retval != PAPI_VER_CURRENT) {
+        printf("PAPI_library_init failed due to %d.\n", retval);
+    }
+}
+
+void region_begin_(const char* region)
+{
+    int retval = PAPI_hl_region_begin(region);
+    if (retval != PAPI_OK) {
+        printf("PAPI_hl_region_begin failed due to %d.\n", retval);
+    }
+}
+
+void region_end_(const char* region)
+{
+    int retval = PAPI_hl_region_end(region);
+    if (retval != PAPI_OK) {
+        printf("PAPI_hl_region_end failed due to %d.\n", retval);
+    }
+}
+
+void roi_begin_()
+{
+    region_begin_("roi");
+}
+
+void roi_end_()
+{
+    region_end_("roi");
+}
+
+void thread_init_()
+{
+    PAPI_thread_init(pthread_self);
+}
+
+#elif defined(GEM5)
+#include <stdio.h>
+#include "gem5/m5ops.h"
+
+void annotate_init_()
+{}
+
+void region_begin_(const char* region)
+{}
+
+void region_end_(const char* region)
+{}
+
+void roi_begin_()
+{
+    m5_work_begin(0,0);
+}
+
+void roi_end_()
+{
+    m5_work_end(0,0);
+}
+
+void thread_init_()
+{}
+
+#else
+#include <stdio.h>
+
+void annotate_init_()
+{}
+
+void region_begin_(const char* region)
+{}
+
+void region_end_(const char* region)
+{}
+
+void roi_begin_(const char* region)
+{
+    printf("Reached the beginning of %s region.\n", region);
+}
+
+void roi_end_(const char* region)
+{
+    printf("Reached the end of %s region.\n", region);
+}
+
+void thread_init_()
+{}
+
+#endif // defined(PAPI)
