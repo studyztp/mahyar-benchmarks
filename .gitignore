@@ -1,0 +1,5 @@
+*.papi
+*.gem5
+*.native
+*.o
+

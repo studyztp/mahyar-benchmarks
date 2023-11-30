@@ -77,19 +77,23 @@ void annotate_init_()
 {}
 
 void region_begin_(const char* region)
-{}
-
-void region_end_(const char* region)
-{}
-
-void roi_begin_(const char* region)
 {
     printf("Reached the beginning of %s region.\n", region);
 }
 
-void roi_end_(const char* region)
+void region_end_(const char* region)
 {
     printf("Reached the end of %s region.\n", region);
+}
+
+void roi_begin_()
+{
+    region_begin_("roi");
+}
+
+void roi_end_(const char* region)
+{
+    region_end_("roi");
 }
 
 void thread_init_()
