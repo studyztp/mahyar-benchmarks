@@ -1,3 +1,9 @@
 [submodule "roi/papi"]
 	path = roi/papi
 	url = https://github.com/mahyarsamani/papi.git
+[submodule "branson"]
+	path = branson
+	url = https://github.com/lanl/branson.git
+[submodule "UME"]
+	path = UME
+	url = https://github.com/lanl/UME.git
