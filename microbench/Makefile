@@ -22,13 +22,13 @@ papi: rand_arr $(SOURCES:.c=.papi)
 gem5: rand_arr $(SOURCES:.c=.gem5)
 
 %.native: %.c
-	$(CC) -o $@ $< $(ROI_DIR)/lib/roi.native -I$(ROI_DIR)/include -lm --static --std=c99 $(OPT)
+	$(CC) -o $@ $< --static --std=c99 $(OPT) -I$(ROI_DIR)/include -L$(ROI_DIR)/lib -lm -lroi.native
 
 %.papi: %.c
-	$(CC) -o $@ $< $(ROI_DIR)/lib/roi.papi -I$(ROI_DIR)/include -I$(ROI_DIR)/papi/install/include -L$(ROI_DIR)/papi/install/lib -lm -lpapi -lpthread --static --std=c99 $(OPT)
+	$(CC) -o $@ $< --static --std=c99 $(OPT) -I$(ROI_DIR)/include -I$(ROI_DIR)/papi/install/include -L$(ROI_DIR)/lib -L$(ROI_DIR)/papi/install/lib -lm -lroi.papi -lpapi -lpthread
 
 %.gem5: %.c
-	$(CC) -o $@ $< $(ROI_DIR)/lib/roi.gem5 -I$(ROI_DIR)/include -I$(ROI_DIR)/gem5/include -L$(ROI_DIR)/gem5/lib -lm -lm5 --static --std=c99 $(OPT)
+	$(CC) -o $@ $< --static --std=c99 $(OPT) -I$(ROI_DIR)/include -I$(ROI_DIR)/gem5/include -L$(ROI_DIR)/lib -L$(ROI_DIR)/gem5/lib -lm -lroi.gem5 -lm5
 
 clean:
 	rm -f $(SOURCES:.c=.native) $(SOURCES:.c=.papi) $(SOURCES:.c=.gem5)  */randArr.h
