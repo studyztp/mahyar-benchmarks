@@ -1,5 +1,5 @@
-*.papi
-*.gem5
-*.native
+*.papi*
+*.gem5*
+*.native*
 *.o
 

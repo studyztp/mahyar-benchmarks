@@ -7,3 +7,6 @@
 [submodule "UME"]
 	path = UME
 	url = https://github.com/lanl/UME.git
+[submodule "microbench"]
+	path = microbench
+	url = ./microbench
