@@ -4,9 +4,6 @@
 [submodule "branson"]
 	path = branson
 	url = https://github.com/mahyarsamani/branson.git
-[submodule "UME"]
-	path = UME
-	url = https://github.com/lanl/UME.git
 [submodule "microbench"]
 	path = microbench
-	url = ./microbench
+	url = https://github.com/mahyarsamani/microbench.git
