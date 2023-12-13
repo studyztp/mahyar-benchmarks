@@ -10,19 +10,18 @@
 #include <cassert>
 #include <chrono>
 
-#ifdef GEM5_ANNOTATION
-#include "gem5/m5ops.h"
-#endif
-
 #include "json.hpp"
+
+extern "C" {
+#include "roi.h"
+#include "scatter_gather_kernels.h"
+}
+
 
 using json = nlohmann::json;
 
 typedef double TElement;
 typedef uint64_t TIndex;
-
-extern "C" void gather(TElement* __restrict__ dst, TElement* __restrict__ src, const TIndex* __restrict__ indices, const size_t array_size);
-extern "C" void scatter(TElement* __restrict__ dst, TElement* __restrict__ src, const TIndex* __restrict__ indices, const size_t array_size);
 
 size_t get_num_omp_threads();
 
@@ -121,9 +120,8 @@ void executeKernels(const char* filename) {
     double t_total = 0;
     std::vector<double> elapsed_time_per_kernel(num_kernels, 0.0);
 
-#ifdef GEM5_ANNOTATION
-    m5_work_begin(0, 0);
-#endif
+    annotate_init_();
+    roi_begin_();
     size_t kernelIdx = 0;
     for (auto const& k: kernels) {
         const auto t_start = std::chrono::steady_clock::now();
@@ -133,9 +131,7 @@ void executeKernels(const char* filename) {
         elapsed_time_per_kernel[kernelIdx] = delta_t.count();
         kernelIdx += 1;
     }
-#ifdef GEM5_ANNOTATION
-    m5_work_end(0, 0);
-#endif
+    roi_end_();
 
     // Reporting
     double total_effective_data_size_in_bytes = 0;

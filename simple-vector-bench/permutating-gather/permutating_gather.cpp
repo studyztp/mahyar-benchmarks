@@ -4,14 +4,14 @@
 #include<chrono>
 #include<iostream>
 
-#ifdef GEM5_ANNOTATION
-#include <gem5/m5ops.h>
-#endif
+extern "C" {
+#include "roi.h"
+#include "gather_kernel.h"
+}
 
 typedef uint64_t TElement;
 typedef uint64_t TIndex;
 
-extern "C" void gather(TElement* __restrict__ dst, TElement* __restrict__ src, const TIndex* __restrict__ indices, const size_t array_size);
 size_t get_num_omp_threads();
 
 class IndexGenerator
@@ -78,20 +78,16 @@ int main(int argc, char* argv[])
     for (TIndex i = 0; i < N_INDEX; i++)
         indices[i] = rng.next()-1;
 
-#ifdef GEM5_ANNOTATION
-    m5_work_begin(0, 0);
-#endif
-
     const auto t_start = std::chrono::steady_clock::now();
+    annotate_init_();
+    roi_begin_();
+
     // Performing indexed-loads
     gather(dst.data(), src.data(), indices.data(), indices.size());
+
+    roi_end_();
     const auto t_end = std::chrono::steady_clock::now();
-
     std::chrono::duration<double> elapsed_time = std::chrono::duration_cast<std::chrono::duration<double>>(t_end - t_start);
-
-#ifdef GEM5_ANNOTATION
-    m5_work_end(0, 0);
-#endif
 
     // https://stackoverflow.com/questions/57538507/how-to-convert-stdchronoduration-to-double-seconds
     using namespace std::literals::chrono_literals;

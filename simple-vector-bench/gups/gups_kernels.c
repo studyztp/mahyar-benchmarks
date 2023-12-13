@@ -1,9 +1,6 @@
-#include <stdint.h>
-#include <stdlib.h>
+#include "gups_kernels.h"
 
-typedef uint64_t TElement;
-typedef uint64_t TIndex;
-typedef int64_t TSignedIndex;
+#include <stdlib.h>
 
 #define POLY 7
 #define PERIOD 1317624576693539401LL

@@ -1,8 +1,4 @@
-#include <stdint.h>
-#include <stddef.h>
-
-typedef double TElement;
-typedef uint64_t TIndex;
+#include "scatter_gather_kernels.h"
 
 void gather(TElement* __restrict__ dst, TElement* __restrict__ src, const TIndex* __restrict__ indices, const size_t array_size) {
     #pragma omp parallel for simd

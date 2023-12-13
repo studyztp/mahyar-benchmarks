@@ -11,9 +11,10 @@
 #include <cstdlib>
 #include <chrono>
 
-#ifdef GEM5_ANNOTATION
-#include <gem5/m5ops.h>
-#endif
+extern "C" {
+#include "roi.h"
+#include "stream_kernels.h"
+}
 
 // https://stackoverflow.com/questions/3437404/min-and-max-in-c
 #define max(a,b) \
@@ -50,12 +51,6 @@ void array_verify(const std::vector<TElement>&, TElement, int*, TElement*, TElem
 void report(const size_t&, const size_t&);
 size_t get_num_omp_threads();
 
-// external functions
-extern "C" void do_copy(TElement* __restrict__ dst, TElement* __restrict__ src, const size_t array_size);
-extern "C" void do_scale(TElement* __restrict__ dst, TElement* __restrict__ src, const TElement scale_factor, const size_t array_size);
-extern "C" void do_add(TElement* __restrict__ dst, TElement* __restrict__ src1, TElement* __restrict__ src2, const size_t array_size);
-extern "C" void do_triad(TElement* __restrict__ dst, TElement* __restrict__ src1, TElement* __restrict__ src2, const TElement scale_factor, const size_t array_size);
-
 // interfacing to the external functions
 double copy(std::vector<TElement>& dst, std::vector<TElement>& src);
 double scale(std::vector<TElement>& dst, std::vector<TElement>& src, const TElement& scale_factor);
@@ -85,16 +80,13 @@ int main(int argc, char* argv[])
     triad(a, b, c, scale_factor);
 
     // 1 iteration
-#ifdef GEM5_ANNOTATION
-    m5_work_begin(0,0);
-#endif
+    annotate_init_();
+    roi_begin_();
     t_copy = copy(c, a);
     t_scale = scale(b, c, scale_factor);
     t_add = add(c, a, b);
     t_triad = triad(a, b, c, scale_factor);
-#ifdef GEM5_ANNOTATION
-    m5_work_end(0,0);
-#endif
+    roi_end_();
 
     expected_a = 1.0;
     expected_b = 2.0;

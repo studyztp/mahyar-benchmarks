@@ -1,6 +1,4 @@
-#include <unistd.h>
-
-typedef double TElement;
+#include "stream_kernels.h"
 
 void do_copy(TElement* restrict dst, TElement* restrict src, const size_t array_size)
 {

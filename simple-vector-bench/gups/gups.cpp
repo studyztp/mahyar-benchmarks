@@ -3,15 +3,14 @@
 #include <numeric>
 #include <chrono>
 
-#ifdef GEM5_ANNOTATION
-#include <gem5/m5ops.h>
-#endif
+extern "C" {
+#include "roi.h"
+#include "gups_kernels.h"
+}
 
 
 typedef uint64_t TElement;
 typedef uint64_t TIndex;
-
-extern "C" void doRandomAccess(TElement* __restrict__ table, const TIndex tableSize, const TIndex numUpdates, const TIndex numUpdatePerBurst);
 
 size_t get_num_omp_threads();
 void report(const size_t& numThreads, const size_t& numTableElements, const size_t& numUpdates, const double& elapsedTime);
@@ -31,15 +30,14 @@ int main(int argc, char* argv[])
 
     TIndex numUpdates = numTableElements*4;
 
-#ifdef GEM5_ANNOTATION
-    m5_work_begin(0,0);
-#endif
     const auto t_start = std::chrono::steady_clock::now();
+    annotate_init_();
+    roi_begin_();
+
     doRandomAccess(table.data(), numTableElements, numUpdates, numUpdatesPerBurst);
+
+    roi_end_();
     const auto t_end = std::chrono::steady_clock::now();
-#ifdef GEM5_ANNOTATION
-    m5_work_end(0,0);
-#endif
     std::chrono::duration<double> delta_t = t_end - t_start;
 
     size_t numThreads = get_num_omp_threads();
