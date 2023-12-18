@@ -1,7 +1,7 @@
 {
   "papi_version":"7.0.1.0",
   "cpu_info":"Arm Neoverse V2",
-  "max_cpu_rate_mhz":"3366",
+  "max_cpu_rate_mhz":"3384",
   "min_cpu_rate_mhz":"81",
   "event_definitions":{
     "PAPI_TOT_INS":{
@@ -27,162 +27,162 @@
         "0":{
           "name":"roi",
           "parent_region_id":"-1",
-          "cycles":"62353216",
-          "real_time_nsec":"62351744",
-          "PAPI_TOT_INS":"768040581",
-          "PAPI_INT_INS":"293819866",
-          "PAPI_FP_INS":"95475472",
-          "PAPI_LD_INS":"286682586"
+          "cycles":"63137856",
+          "real_time_nsec":"63136055",
+          "PAPI_TOT_INS":"779981113",
+          "PAPI_INT_INS":"299830230",
+          "PAPI_FP_INS":"95476198",
+          "PAPI_LD_INS":"288699210"
         },
         "1":{
           "name":"parallel-calculation",
           "parent_region_id":"0",
-          "cycles":"396096",
-          "real_time_nsec":"395072",
-          "PAPI_TOT_INS":"1842583",
-          "PAPI_INT_INS":"923330",
+          "cycles":"362976",
+          "real_time_nsec":"362622",
+          "PAPI_TOT_INS":"1842793",
+          "PAPI_INT_INS":"921892",
           "PAPI_FP_INS":"4419",
-          "PAPI_LD_INS":"312166"
+          "PAPI_LD_INS":"311620"
         },
         "2":{
           "name":"parallel-calculation",
           "parent_region_id":"0",
-          "cycles":"45760",
-          "real_time_nsec":"46080",
-          "PAPI_TOT_INS":"544152",
-          "PAPI_INT_INS":"271648",
-          "PAPI_FP_INS":"4490",
-          "PAPI_LD_INS":"93961"
+          "cycles":"30784",
+          "real_time_nsec":"30239",
+          "PAPI_TOT_INS":"281502",
+          "PAPI_INT_INS":"140597",
+          "PAPI_FP_INS":"4487",
+          "PAPI_LD_INS":"50194"
         },
         "3":{
           "name":"parallel-calculation",
           "parent_region_id":"0",
-          "cycles":"32160",
-          "real_time_nsec":"18176",
-          "PAPI_TOT_INS":"114627",
-          "PAPI_INT_INS":"55503",
-          "PAPI_FP_INS":"4413",
-          "PAPI_LD_INS":"21581"
+          "cycles":"29728",
+          "real_time_nsec":"29568",
+          "PAPI_TOT_INS":"326875",
+          "PAPI_INT_INS":"160793",
+          "PAPI_FP_INS":"4416",
+          "PAPI_LD_INS":"56680"
         },
         "4":{
           "name":"parallel-calculation",
           "parent_region_id":"0",
-          "cycles":"31360",
-          "real_time_nsec":"24352",
-          "PAPI_TOT_INS":"231011",
-          "PAPI_INT_INS":"113246",
-          "PAPI_FP_INS":"4417",
-          "PAPI_LD_INS":"40797"
+          "cycles":"31840",
+          "real_time_nsec":"31584",
+          "PAPI_TOT_INS":"354181",
+          "PAPI_INT_INS":"174501",
+          "PAPI_FP_INS":"4463",
+          "PAPI_LD_INS":"61241"
         },
         "5":{
           "name":"parallel-calculation",
           "parent_region_id":"0",
-          "cycles":"28096",
-          "real_time_nsec":"11424",
-          "PAPI_TOT_INS":"31833",
-          "PAPI_INT_INS":"13175",
-          "PAPI_FP_INS":"4409",
-          "PAPI_LD_INS":"7394"
+          "cycles":"24064",
+          "real_time_nsec":"17952",
+          "PAPI_TOT_INS":"187248",
+          "PAPI_INT_INS":"90762",
+          "PAPI_FP_INS":"4421",
+          "PAPI_LD_INS":"33298"
         },
         "6":{
           "name":"parallel-calculation",
           "parent_region_id":"0",
-          "cycles":"26560",
-          "real_time_nsec":"20672",
-          "PAPI_TOT_INS":"173928",
-          "PAPI_INT_INS":"84066",
-          "PAPI_FP_INS":"4411",
-          "PAPI_LD_INS":"31040"
+          "cycles":"31520",
+          "real_time_nsec":"9984",
+          "PAPI_TOT_INS":"31833",
+          "PAPI_INT_INS":"13418",
+          "PAPI_FP_INS":"4415",
+          "PAPI_LD_INS":"7482"
         },
         "7":{
           "name":"parallel-calculation",
           "parent_region_id":"0",
-          "cycles":"25408",
-          "real_time_nsec":"10944",
-          "PAPI_TOT_INS":"31797",
-          "PAPI_INT_INS":"13043",
+          "cycles":"27808",
+          "real_time_nsec":"16000",
+          "PAPI_TOT_INS":"138437",
+          "PAPI_INT_INS":"66441",
           "PAPI_FP_INS":"4414",
-          "PAPI_LD_INS":"7386"
+          "PAPI_LD_INS":"25208"
         },
         "8":{
           "name":"parallel-calculation",
           "parent_region_id":"0",
-          "cycles":"28160",
-          "real_time_nsec":"12128",
-          "PAPI_TOT_INS":"31782",
-          "PAPI_INT_INS":"13018",
+          "cycles":"26656",
+          "real_time_nsec":"10720",
+          "PAPI_TOT_INS":"31770",
+          "PAPI_INT_INS":"13043",
           "PAPI_FP_INS":"4415",
-          "PAPI_LD_INS":"7349"
+          "PAPI_LD_INS":"7361"
         },
         "9":{
           "name":"parallel-calculation",
           "parent_region_id":"0",
-          "cycles":"37696",
-          "real_time_nsec":"37280",
-          "PAPI_TOT_INS":"391786",
-          "PAPI_INT_INS":"193576",
-          "PAPI_FP_INS":"4415",
-          "PAPI_LD_INS":"67627"
+          "cycles":"27648",
+          "real_time_nsec":"37216",
+          "PAPI_TOT_INS":"270496",
+          "PAPI_INT_INS":"132408",
+          "PAPI_FP_INS":"4414",
+          "PAPI_LD_INS":"47196"
         },
         "10":{
           "name":"parallel-calculation",
           "parent_region_id":"0",
-          "cycles":"28224",
-          "real_time_nsec":"27936",
-          "PAPI_TOT_INS":"234373",
-          "PAPI_INT_INS":"114425",
-          "PAPI_FP_INS":"4415",
-          "PAPI_LD_INS":"41233"
+          "cycles":"28000",
+          "real_time_nsec":"36224",
+          "PAPI_TOT_INS":"285883",
+          "PAPI_INT_INS":"139855",
+          "PAPI_FP_INS":"4420",
+          "PAPI_LD_INS":"49650"
         },
         "11":{
           "name":"parallel-calculation",
           "parent_region_id":"0",
-          "cycles":"30496",
-          "real_time_nsec":"24416",
-          "PAPI_TOT_INS":"222942",
-          "PAPI_INT_INS":"108671",
-          "PAPI_FP_INS":"4417",
-          "PAPI_LD_INS":"39312"
+          "cycles":"32672",
+          "real_time_nsec":"10432",
+          "PAPI_TOT_INS":"31789",
+          "PAPI_INT_INS":"13229",
+          "PAPI_FP_INS":"4419",
+          "PAPI_LD_INS":"7456"
         },
         "12":{
           "name":"parallel-calculation",
           "parent_region_id":"0",
-          "cycles":"34048",
-          "real_time_nsec":"33632",
-          "PAPI_TOT_INS":"327121",
-          "PAPI_INT_INS":"160747",
-          "PAPI_FP_INS":"4483",
-          "PAPI_LD_INS":"56694"
+          "cycles":"36000",
+          "real_time_nsec":"33984",
+          "PAPI_TOT_INS":"427818",
+          "PAPI_INT_INS":"210728",
+          "PAPI_FP_INS":"4417",
+          "PAPI_LD_INS":"73307"
         },
         "13":{
           "name":"parallel-calculation",
           "parent_region_id":"0",
-          "cycles":"32544",
-          "real_time_nsec":"32224",
-          "PAPI_TOT_INS":"337477",
-          "PAPI_INT_INS":"165491",
-          "PAPI_FP_INS":"4413",
-          "PAPI_LD_INS":"58202"
+          "cycles":"32416",
+          "real_time_nsec":"9952",
+          "PAPI_TOT_INS":"31801",
+          "PAPI_INT_INS":"12634",
+          "PAPI_FP_INS":"4421",
+          "PAPI_LD_INS":"7206"
         },
         "14":{
           "name":"parallel-calculation",
           "parent_region_id":"0",
-          "cycles":"31264",
-          "real_time_nsec":"30944",
-          "PAPI_TOT_INS":"342439",
-          "PAPI_INT_INS":"167984",
-          "PAPI_FP_INS":"4413",
-          "PAPI_LD_INS":"59054"
+          "cycles":"29056",
+          "real_time_nsec":"19936",
+          "PAPI_TOT_INS":"195676",
+          "PAPI_INT_INS":"94645",
+          "PAPI_FP_INS":"4415",
+          "PAPI_LD_INS":"34613"
         },
         "15":{
           "name":"parallel-calculation",
           "parent_region_id":"0",
-          "cycles":"32096",
-          "real_time_nsec":"15296",
-          "PAPI_TOT_INS":"98885",
-          "PAPI_INT_INS":"47110",
-          "PAPI_FP_INS":"4414",
-          "PAPI_LD_INS":"18754"
+          "cycles":"34016",
+          "real_time_nsec":"22944",
+          "PAPI_TOT_INS":"254159",
+          "PAPI_INT_INS":"123794",
+          "PAPI_FP_INS":"4413",
+          "PAPI_LD_INS":"44314"
         }
       }
     },
@@ -191,152 +191,152 @@
         "0":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"21888",
-          "real_time_nsec":"24032",
-          "PAPI_TOT_INS":"327232",
-          "PAPI_INT_INS":"161094",
-          "PAPI_FP_INS":"4402",
-          "PAPI_LD_INS":"56610"
+          "cycles":"20000",
+          "real_time_nsec":"26208",
+          "PAPI_TOT_INS":"245795",
+          "PAPI_INT_INS":"120251",
+          "PAPI_FP_INS":"4441",
+          "PAPI_LD_INS":"43081"
         },
         "1":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"34752",
-          "real_time_nsec":"30848",
-          "PAPI_TOT_INS":"474529",
-          "PAPI_INT_INS":"234288",
-          "PAPI_FP_INS":"4400",
-          "PAPI_LD_INS":"80855"
+          "cycles":"20032",
+          "real_time_nsec":"18816",
+          "PAPI_TOT_INS":"238850",
+          "PAPI_INT_INS":"116659",
+          "PAPI_FP_INS":"4399",
+          "PAPI_LD_INS":"41625"
         },
         "2":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23968",
-          "real_time_nsec":"23392",
-          "PAPI_TOT_INS":"280646",
-          "PAPI_INT_INS":"136932",
-          "PAPI_FP_INS":"4397",
-          "PAPI_LD_INS":"48362"
+          "cycles":"22304",
+          "real_time_nsec":"9184",
+          "PAPI_TOT_INS":"55739",
+          "PAPI_INT_INS":"24822",
+          "PAPI_FP_INS":"4388",
+          "PAPI_LD_INS":"10990"
         },
         "3":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23328",
-          "real_time_nsec":"22624",
-          "PAPI_TOT_INS":"253424",
-          "PAPI_INT_INS":"123321",
-          "PAPI_FP_INS":"4395",
-          "PAPI_LD_INS":"43833"
+          "cycles":"24704",
+          "real_time_nsec":"14976",
+          "PAPI_TOT_INS":"87523",
+          "PAPI_INT_INS":"40328",
+          "PAPI_FP_INS":"4397",
+          "PAPI_LD_INS":"16157"
         },
         "4":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"21760",
-          "real_time_nsec":"35744",
-          "PAPI_TOT_INS":"286232",
-          "PAPI_INT_INS":"139789",
-          "PAPI_FP_INS":"4400",
-          "PAPI_LD_INS":"49324"
+          "cycles":"17792",
+          "real_time_nsec":"16800",
+          "PAPI_TOT_INS":"199946",
+          "PAPI_INT_INS":"96565",
+          "PAPI_FP_INS":"4394",
+          "PAPI_LD_INS":"34891"
         },
         "5":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"18912",
-          "real_time_nsec":"11296",
-          "PAPI_TOT_INS":"144347",
-          "PAPI_INT_INS":"69312",
-          "PAPI_FP_INS":"4393",
-          "PAPI_LD_INS":"25857"
+          "cycles":"25792",
+          "real_time_nsec":"25344",
+          "PAPI_TOT_INS":"366134",
+          "PAPI_INT_INS":"179632",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"62582"
         },
         "6":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"19040",
-          "real_time_nsec":"13696",
-          "PAPI_TOT_INS":"136341",
-          "PAPI_INT_INS":"65129",
-          "PAPI_FP_INS":"4414",
-          "PAPI_LD_INS":"24436"
+          "cycles":"21440",
+          "real_time_nsec":"20896",
+          "PAPI_TOT_INS":"265676",
+          "PAPI_INT_INS":"129408",
+          "PAPI_FP_INS":"4395",
+          "PAPI_LD_INS":"45850"
         },
         "7":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"20320",
-          "real_time_nsec":"15776",
-          "PAPI_TOT_INS":"143411",
-          "PAPI_INT_INS":"68807",
-          "PAPI_FP_INS":"4399",
-          "PAPI_LD_INS":"25687"
+          "cycles":"20512",
+          "real_time_nsec":"21536",
+          "PAPI_TOT_INS":"251738",
+          "PAPI_INT_INS":"122418",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"43514"
         },
         "8":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"29984",
-          "real_time_nsec":"17408",
-          "PAPI_TOT_INS":"203249",
-          "PAPI_INT_INS":"98378",
-          "PAPI_FP_INS":"4392",
-          "PAPI_LD_INS":"35517"
+          "cycles":"21408",
+          "real_time_nsec":"11904",
+          "PAPI_TOT_INS":"50965",
+          "PAPI_INT_INS":"22519",
+          "PAPI_FP_INS":"4391",
+          "PAPI_LD_INS":"10215"
         },
         "9":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"20704",
-          "real_time_nsec":"22784",
-          "PAPI_TOT_INS":"184099",
-          "PAPI_INT_INS":"88803",
+          "cycles":"21664",
+          "real_time_nsec":"17760",
+          "PAPI_TOT_INS":"162533",
+          "PAPI_INT_INS":"77868",
           "PAPI_FP_INS":"4393",
-          "PAPI_LD_INS":"32320"
+          "PAPI_LD_INS":"28677"
         },
         "10":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"22592",
-          "real_time_nsec":"23328",
-          "PAPI_TOT_INS":"196368",
-          "PAPI_INT_INS":"95104",
-          "PAPI_FP_INS":"4394",
-          "PAPI_LD_INS":"34428"
+          "cycles":"26400",
+          "real_time_nsec":"20864",
+          "PAPI_TOT_INS":"89571",
+          "PAPI_INT_INS":"41746",
+          "PAPI_FP_INS":"4393",
+          "PAPI_LD_INS":"16632"
         },
         "11":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"26016",
-          "real_time_nsec":"18016",
-          "PAPI_TOT_INS":"72923",
-          "PAPI_INT_INS":"33373",
-          "PAPI_FP_INS":"4446",
-          "PAPI_LD_INS":"13867"
+          "cycles":"29728",
+          "real_time_nsec":"17760",
+          "PAPI_TOT_INS":"205249",
+          "PAPI_INT_INS":"99226",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"35788"
         },
         "12":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"25056",
-          "real_time_nsec":"22944",
-          "PAPI_TOT_INS":"306205",
-          "PAPI_INT_INS":"149775",
-          "PAPI_FP_INS":"4395",
-          "PAPI_LD_INS":"52648"
+          "cycles":"27008",
+          "real_time_nsec":"8544",
+          "PAPI_TOT_INS":"63753",
+          "PAPI_INT_INS":"28599",
+          "PAPI_FP_INS":"4394",
+          "PAPI_LD_INS":"12248"
         },
         "13":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"24096",
-          "real_time_nsec":"23232",
-          "PAPI_TOT_INS":"257281",
-          "PAPI_INT_INS":"125282",
+          "cycles":"22656",
+          "real_time_nsec":"22368",
+          "PAPI_TOT_INS":"303620",
+          "PAPI_INT_INS":"148388",
           "PAPI_FP_INS":"4393",
-          "PAPI_LD_INS":"44474"
+          "PAPI_LD_INS":"52173"
         },
         "14":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"25376",
-          "real_time_nsec":"27328",
-          "PAPI_TOT_INS":"316862",
-          "PAPI_INT_INS":"155281",
-          "PAPI_FP_INS":"4391",
-          "PAPI_LD_INS":"54525"
+          "cycles":"27872",
+          "real_time_nsec":"32800",
+          "PAPI_TOT_INS":"365125",
+          "PAPI_INT_INS":"179136",
+          "PAPI_FP_INS":"4393",
+          "PAPI_LD_INS":"62425"
         }
       }
     },
@@ -345,152 +345,152 @@
         "0":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"35264",
-          "real_time_nsec":"36704",
-          "PAPI_TOT_INS":"600210",
-          "PAPI_INT_INS":"297251",
+          "cycles":"27808",
+          "real_time_nsec":"26656",
+          "PAPI_TOT_INS":"441084",
+          "PAPI_INT_INS":"217868",
           "PAPI_FP_INS":"4403",
-          "PAPI_LD_INS":"102088"
+          "PAPI_LD_INS":"75660"
         },
         "1":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"35072",
-          "real_time_nsec":"30112",
-          "PAPI_TOT_INS":"352313",
-          "PAPI_INT_INS":"173152",
-          "PAPI_FP_INS":"4412",
-          "PAPI_LD_INS":"60454"
+          "cycles":"21088",
+          "real_time_nsec":"12287",
+          "PAPI_TOT_INS":"19170",
+          "PAPI_INT_INS":"6622",
+          "PAPI_FP_INS":"4459",
+          "PAPI_LD_INS":"4978"
         },
         "2":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23648",
-          "real_time_nsec":"18656",
-          "PAPI_TOT_INS":"219265",
-          "PAPI_INT_INS":"106456",
-          "PAPI_FP_INS":"4398",
-          "PAPI_LD_INS":"38219"
+          "cycles":"21728",
+          "real_time_nsec":"20640",
+          "PAPI_TOT_INS":"247476",
+          "PAPI_INT_INS":"120439",
+          "PAPI_FP_INS":"4393",
+          "PAPI_LD_INS":"42868"
         },
         "3":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23456",
-          "real_time_nsec":"19072",
-          "PAPI_TOT_INS":"137663",
-          "PAPI_INT_INS":"65512",
-          "PAPI_FP_INS":"4399",
-          "PAPI_LD_INS":"24568"
+          "cycles":"24480",
+          "real_time_nsec":"23072",
+          "PAPI_TOT_INS":"325617",
+          "PAPI_INT_INS":"159675",
+          "PAPI_FP_INS":"4409",
+          "PAPI_LD_INS":"55942"
         },
         "4":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"21248",
-          "real_time_nsec":"27008",
-          "PAPI_TOT_INS":"166093",
-          "PAPI_INT_INS":"79693",
-          "PAPI_FP_INS":"4398",
-          "PAPI_LD_INS":"29280"
+          "cycles":"18304",
+          "real_time_nsec":"20352",
+          "PAPI_TOT_INS":"231836",
+          "PAPI_INT_INS":"112479",
+          "PAPI_FP_INS":"4394",
+          "PAPI_LD_INS":"40202"
         },
         "5":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"18592",
-          "real_time_nsec":"4096",
-          "PAPI_TOT_INS":"19140",
-          "PAPI_INT_INS":"6220",
-          "PAPI_FP_INS":"4394",
-          "PAPI_LD_INS":"4813"
+          "cycles":"25760",
+          "real_time_nsec":"11584",
+          "PAPI_TOT_INS":"87763",
+          "PAPI_INT_INS":"40696",
+          "PAPI_FP_INS":"4393",
+          "PAPI_LD_INS":"16278"
         },
         "6":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"18880",
-          "real_time_nsec":"13696",
-          "PAPI_TOT_INS":"132247",
-          "PAPI_INT_INS":"62938",
-          "PAPI_FP_INS":"4396",
-          "PAPI_LD_INS":"23703"
+          "cycles":"21440",
+          "real_time_nsec":"11488",
+          "PAPI_TOT_INS":"19140",
+          "PAPI_INT_INS":"6159",
+          "PAPI_FP_INS":"4394",
+          "PAPI_LD_INS":"4758"
         },
         "7":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"20608",
-          "real_time_nsec":"20352",
-          "PAPI_TOT_INS":"241358",
-          "PAPI_INT_INS":"117288",
-          "PAPI_FP_INS":"4395",
-          "PAPI_LD_INS":"41819"
+          "cycles":"19968",
+          "real_time_nsec":"9888",
+          "PAPI_TOT_INS":"125101",
+          "PAPI_INT_INS":"59134",
+          "PAPI_FP_INS":"4393",
+          "PAPI_LD_INS":"22420"
         },
         "8":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"29952",
-          "real_time_nsec":"19264",
-          "PAPI_TOT_INS":"102099",
-          "PAPI_INT_INS":"47834",
-          "PAPI_FP_INS":"4395",
-          "PAPI_LD_INS":"18656"
+          "cycles":"20928",
+          "real_time_nsec":"9504",
+          "PAPI_TOT_INS":"94207",
+          "PAPI_INT_INS":"43670",
+          "PAPI_FP_INS":"4393",
+          "PAPI_LD_INS":"17262"
         },
         "9":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"20320",
-          "real_time_nsec":"16608",
-          "PAPI_TOT_INS":"174925",
-          "PAPI_INT_INS":"84122",
-          "PAPI_FP_INS":"4398",
-          "PAPI_LD_INS":"30761"
+          "cycles":"21248",
+          "real_time_nsec":"4096",
+          "PAPI_TOT_INS":"19160",
+          "PAPI_INT_INS":"6408",
+          "PAPI_FP_INS":"4390",
+          "PAPI_LD_INS":"4833"
         },
         "10":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"22240",
-          "real_time_nsec":"19488",
-          "PAPI_TOT_INS":"226513",
-          "PAPI_INT_INS":"109861",
-          "PAPI_FP_INS":"4413",
-          "PAPI_LD_INS":"39339"
+          "cycles":"26272",
+          "real_time_nsec":"22976",
+          "PAPI_TOT_INS":"341695",
+          "PAPI_INT_INS":"167431",
+          "PAPI_FP_INS":"4393",
+          "PAPI_LD_INS":"58520"
         },
         "11":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"25824",
-          "real_time_nsec":"22624",
-          "PAPI_TOT_INS":"99601",
-          "PAPI_INT_INS":"46632",
-          "PAPI_FP_INS":"4398",
-          "PAPI_LD_INS":"18277"
+          "cycles":"29952",
+          "real_time_nsec":"42016",
+          "PAPI_TOT_INS":"422330",
+          "PAPI_INT_INS":"207818",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"71977"
         },
         "12":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"24800",
-          "real_time_nsec":"34720",
-          "PAPI_TOT_INS":"286249",
-          "PAPI_INT_INS":"139709",
-          "PAPI_FP_INS":"4396",
-          "PAPI_LD_INS":"49284"
+          "cycles":"26560",
+          "real_time_nsec":"21344",
+          "PAPI_TOT_INS":"335719",
+          "PAPI_INT_INS":"164457",
+          "PAPI_FP_INS":"4393",
+          "PAPI_LD_INS":"57521"
         },
         "13":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23872",
-          "real_time_nsec":"18848",
-          "PAPI_TOT_INS":"98947",
-          "PAPI_INT_INS":"46161",
-          "PAPI_FP_INS":"4404",
-          "PAPI_LD_INS":"18127"
+          "cycles":"22880",
+          "real_time_nsec":"11840",
+          "PAPI_TOT_INS":"19140",
+          "PAPI_INT_INS":"6414",
+          "PAPI_FP_INS":"4394",
+          "PAPI_LD_INS":"4852"
         },
         "14":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"24704",
-          "real_time_nsec":"12832",
-          "PAPI_TOT_INS":"19160",
-          "PAPI_INT_INS":"6370",
-          "PAPI_FP_INS":"4396",
-          "PAPI_LD_INS":"4861"
+          "cycles":"27968",
+          "real_time_nsec":"18848",
+          "PAPI_TOT_INS":"111203",
+          "PAPI_INT_INS":"52698",
+          "PAPI_FP_INS":"4403",
+          "PAPI_LD_INS":"20303"
         }
       }
     },
@@ -499,152 +499,152 @@
         "0":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"29152",
-          "real_time_nsec":"27872",
-          "PAPI_TOT_INS":"461532",
-          "PAPI_INT_INS":"228035",
-          "PAPI_FP_INS":"4403",
-          "PAPI_LD_INS":"79008"
+          "cycles":"17536",
+          "real_time_nsec":"18208",
+          "PAPI_TOT_INS":"183346",
+          "PAPI_INT_INS":"89012",
+          "PAPI_FP_INS":"4391",
+          "PAPI_LD_INS":"32698"
         },
         "1":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"34784",
-          "real_time_nsec":"35424",
-          "PAPI_TOT_INS":"485937",
-          "PAPI_INT_INS":"240001",
-          "PAPI_FP_INS":"4396",
-          "PAPI_LD_INS":"82760"
+          "cycles":"20256",
+          "real_time_nsec":"9504",
+          "PAPI_TOT_INS":"61760",
+          "PAPI_INT_INS":"28559",
+          "PAPI_FP_INS":"4426",
+          "PAPI_LD_INS":"12248"
         },
         "2":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23456",
-          "real_time_nsec":"9824",
-          "PAPI_TOT_INS":"50575",
-          "PAPI_INT_INS":"21960",
-          "PAPI_FP_INS":"4391",
-          "PAPI_LD_INS":"10057"
+          "cycles":"22560",
+          "real_time_nsec":"14016",
+          "PAPI_TOT_INS":"137528",
+          "PAPI_INT_INS":"65344",
+          "PAPI_FP_INS":"4389",
+          "PAPI_LD_INS":"24491"
         },
         "3":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23232",
-          "real_time_nsec":"34656",
-          "PAPI_TOT_INS":"235021",
-          "PAPI_INT_INS":"114154",
-          "PAPI_FP_INS":"4389",
-          "PAPI_LD_INS":"40753"
+          "cycles":"25248",
+          "real_time_nsec":"10176",
+          "PAPI_TOT_INS":"82108",
+          "PAPI_INT_INS":"37641",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"15258"
         },
         "4":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"21216",
-          "real_time_nsec":"22912",
-          "PAPI_TOT_INS":"191689",
-          "PAPI_INT_INS":"92430",
-          "PAPI_FP_INS":"4394",
-          "PAPI_LD_INS":"33530"
+          "cycles":"18336",
+          "real_time_nsec":"12192",
+          "PAPI_TOT_INS":"88100",
+          "PAPI_INT_INS":"40681",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"16270"
         },
         "5":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"19040",
-          "real_time_nsec":"12384",
-          "PAPI_TOT_INS":"103579",
-          "PAPI_INT_INS":"48422",
-          "PAPI_FP_INS":"4401",
-          "PAPI_LD_INS":"18868"
+          "cycles":"25920",
+          "real_time_nsec":"26528",
+          "PAPI_TOT_INS":"194702",
+          "PAPI_INT_INS":"93922",
+          "PAPI_FP_INS":"4389",
+          "PAPI_LD_INS":"34015"
         },
         "6":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"18784",
-          "real_time_nsec":"15904",
-          "PAPI_TOT_INS":"151039",
-          "PAPI_INT_INS":"72119",
-          "PAPI_FP_INS":"4393",
-          "PAPI_LD_INS":"26762"
+          "cycles":"21696",
+          "real_time_nsec":"17312",
+          "PAPI_TOT_INS":"199294",
+          "PAPI_INT_INS":"96208",
+          "PAPI_FP_INS":"4389",
+          "PAPI_LD_INS":"34776"
         },
         "7":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"20320",
-          "real_time_nsec":"27968",
-          "PAPI_TOT_INS":"148625",
-          "PAPI_INT_INS":"71065",
+          "cycles":"20288",
+          "real_time_nsec":"26592",
+          "PAPI_TOT_INS":"194668",
+          "PAPI_INT_INS":"93925",
           "PAPI_FP_INS":"4392",
-          "PAPI_LD_INS":"26409"
+          "PAPI_LD_INS":"34022"
         },
         "8":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"29792",
-          "real_time_nsec":"33824",
-          "PAPI_TOT_INS":"351721",
-          "PAPI_INT_INS":"172609",
-          "PAPI_FP_INS":"4393",
-          "PAPI_LD_INS":"60275"
+          "cycles":"21216",
+          "real_time_nsec":"26432",
+          "PAPI_TOT_INS":"188296",
+          "PAPI_INT_INS":"90732",
+          "PAPI_FP_INS":"4387",
+          "PAPI_LD_INS":"32950"
         },
         "9":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"20480",
-          "real_time_nsec":"11136",
-          "PAPI_TOT_INS":"19196",
-          "PAPI_INT_INS":"6344",
-          "PAPI_FP_INS":"4389",
-          "PAPI_LD_INS":"4840"
+          "cycles":"21664",
+          "real_time_nsec":"19328",
+          "PAPI_TOT_INS":"197422",
+          "PAPI_INT_INS":"95288",
+          "PAPI_FP_INS":"4387",
+          "PAPI_LD_INS":"34470"
         },
         "10":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"22528",
-          "real_time_nsec":"32384",
-          "PAPI_TOT_INS":"203005",
-          "PAPI_INT_INS":"98410",
-          "PAPI_FP_INS":"4398",
-          "PAPI_LD_INS":"35526"
+          "cycles":"26784",
+          "real_time_nsec":"28128",
+          "PAPI_TOT_INS":"300161",
+          "PAPI_INT_INS":"146671",
+          "PAPI_FP_INS":"4390",
+          "PAPI_LD_INS":"51598"
         },
         "11":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"25696",
-          "real_time_nsec":"17184",
-          "PAPI_TOT_INS":"19196",
-          "PAPI_INT_INS":"6449",
-          "PAPI_FP_INS":"4395",
-          "PAPI_LD_INS":"4858"
+          "cycles":"30176",
+          "real_time_nsec":"25760",
+          "PAPI_TOT_INS":"330976",
+          "PAPI_INT_INS":"162051",
+          "PAPI_FP_INS":"4387",
+          "PAPI_LD_INS":"56729"
         },
         "12":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"25056",
-          "real_time_nsec":"36736",
-          "PAPI_TOT_INS":"411872",
-          "PAPI_INT_INS":"202635",
-          "PAPI_FP_INS":"4394",
-          "PAPI_LD_INS":"70271"
+          "cycles":"26976",
+          "real_time_nsec":"36224",
+          "PAPI_TOT_INS":"315431",
+          "PAPI_INT_INS":"154303",
+          "PAPI_FP_INS":"4389",
+          "PAPI_LD_INS":"54147"
         },
         "13":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23712",
-          "real_time_nsec":"18944",
-          "PAPI_TOT_INS":"93643",
-          "PAPI_INT_INS":"43616",
-          "PAPI_FP_INS":"4466",
-          "PAPI_LD_INS":"17327"
+          "cycles":"23072",
+          "real_time_nsec":"21152",
+          "PAPI_TOT_INS":"217348",
+          "PAPI_INT_INS":"105223",
+          "PAPI_FP_INS":"4390",
+          "PAPI_LD_INS":"37785"
         },
         "14":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"24352",
-          "real_time_nsec":"19392",
-          "PAPI_TOT_INS":"268099",
-          "PAPI_INT_INS":"130752",
-          "PAPI_FP_INS":"4455",
-          "PAPI_LD_INS":"46359"
+          "cycles":"28192",
+          "real_time_nsec":"20512",
+          "PAPI_TOT_INS":"213350",
+          "PAPI_INT_INS":"103321",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"37154"
         }
       }
     },
@@ -653,152 +653,152 @@
         "0":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"27552",
-          "real_time_nsec":"27104",
-          "PAPI_TOT_INS":"256325",
-          "PAPI_INT_INS":"125194",
-          "PAPI_FP_INS":"4396",
-          "PAPI_LD_INS":"44561"
+          "cycles":"19584",
+          "real_time_nsec":"17120",
+          "PAPI_TOT_INS":"106923",
+          "PAPI_INT_INS":"50538",
+          "PAPI_FP_INS":"4394",
+          "PAPI_LD_INS":"19804"
         },
         "1":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"32864",
-          "real_time_nsec":"13664",
-          "PAPI_TOT_INS":"19175",
-          "PAPI_INT_INS":"6800",
-          "PAPI_FP_INS":"4465",
-          "PAPI_LD_INS":"5049"
+          "cycles":"20192",
+          "real_time_nsec":"29791",
+          "PAPI_TOT_INS":"179491",
+          "PAPI_INT_INS":"86732",
+          "PAPI_FP_INS":"4457",
+          "PAPI_LD_INS":"31717"
         },
         "2":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23200",
-          "real_time_nsec":"30656",
-          "PAPI_TOT_INS":"201964",
-          "PAPI_INT_INS":"97907",
-          "PAPI_FP_INS":"4395",
-          "PAPI_LD_INS":"35321"
+          "cycles":"22240",
+          "real_time_nsec":"11200",
+          "PAPI_TOT_INS":"19170",
+          "PAPI_INT_INS":"6562",
+          "PAPI_FP_INS":"4398",
+          "PAPI_LD_INS":"4900"
         },
         "3":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"22944",
-          "real_time_nsec":"23808",
-          "PAPI_TOT_INS":"223012",
-          "PAPI_INT_INS":"108244",
-          "PAPI_FP_INS":"4393",
-          "PAPI_LD_INS":"38793"
+          "cycles":"25056",
+          "real_time_nsec":"8096",
+          "PAPI_TOT_INS":"19190",
+          "PAPI_INT_INS":"6373",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"4843"
         },
         "4":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"21472",
-          "real_time_nsec":"13024",
-          "PAPI_TOT_INS":"133814",
-          "PAPI_INT_INS":"63507",
-          "PAPI_FP_INS":"4391",
-          "PAPI_LD_INS":"23888"
+          "cycles":"18144",
+          "real_time_nsec":"14304",
+          "PAPI_TOT_INS":"77059",
+          "PAPI_INT_INS":"35154",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"14424"
         },
         "5":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"18944",
-          "real_time_nsec":"21024",
-          "PAPI_TOT_INS":"234203",
-          "PAPI_INT_INS":"113689",
-          "PAPI_FP_INS":"4393",
-          "PAPI_LD_INS":"40609"
+          "cycles":"26080",
+          "real_time_nsec":"16512",
+          "PAPI_TOT_INS":"177707",
+          "PAPI_INT_INS":"85787",
+          "PAPI_FP_INS":"4394",
+          "PAPI_LD_INS":"31329"
         },
         "6":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"19424",
-          "real_time_nsec":"33152",
-          "PAPI_TOT_INS":"203735",
-          "PAPI_INT_INS":"98452",
-          "PAPI_FP_INS":"4394",
-          "PAPI_LD_INS":"35529"
+          "cycles":"21696",
+          "real_time_nsec":"15584",
+          "PAPI_TOT_INS":"129671",
+          "PAPI_INT_INS":"61460",
+          "PAPI_FP_INS":"4387",
+          "PAPI_LD_INS":"23192"
         },
         "7":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"20416",
-          "real_time_nsec":"24960",
-          "PAPI_TOT_INS":"166462",
-          "PAPI_INT_INS":"79882",
-          "PAPI_FP_INS":"4391",
-          "PAPI_LD_INS":"29346"
+          "cycles":"20192",
+          "real_time_nsec":"21888",
+          "PAPI_TOT_INS":"253718",
+          "PAPI_INT_INS":"123589",
+          "PAPI_FP_INS":"4388",
+          "PAPI_LD_INS":"43910"
         },
         "8":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"30496",
-          "real_time_nsec":"27872",
-          "PAPI_TOT_INS":"371740",
-          "PAPI_INT_INS":"182483",
-          "PAPI_FP_INS":"4393",
-          "PAPI_LD_INS":"63541"
+          "cycles":"21120",
+          "real_time_nsec":"5760",
+          "PAPI_TOT_INS":"19190",
+          "PAPI_INT_INS":"6405",
+          "PAPI_FP_INS":"4395",
+          "PAPI_LD_INS":"4836"
         },
         "9":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"19872",
-          "real_time_nsec":"9280",
-          "PAPI_TOT_INS":"65248",
-          "PAPI_INT_INS":"29289",
-          "PAPI_FP_INS":"4392",
-          "PAPI_LD_INS":"12481"
+          "cycles":"21728",
+          "real_time_nsec":"18368",
+          "PAPI_TOT_INS":"125773",
+          "PAPI_INT_INS":"59449",
+          "PAPI_FP_INS":"4388",
+          "PAPI_LD_INS":"22526"
         },
         "10":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"22368",
-          "real_time_nsec":"6560",
-          "PAPI_TOT_INS":"19155",
-          "PAPI_INT_INS":"6177",
-          "PAPI_FP_INS":"4409",
-          "PAPI_LD_INS":"4768"
+          "cycles":"26752",
+          "real_time_nsec":"18208",
+          "PAPI_TOT_INS":"89247",
+          "PAPI_INT_INS":"41493",
+          "PAPI_FP_INS":"4389",
+          "PAPI_LD_INS":"16548"
         },
         "11":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"26272",
-          "real_time_nsec":"23968",
-          "PAPI_TOT_INS":"282562",
-          "PAPI_INT_INS":"137968",
-          "PAPI_FP_INS":"4399",
-          "PAPI_LD_INS":"48716"
+          "cycles":"29856",
+          "real_time_nsec":"24064",
+          "PAPI_TOT_INS":"148215",
+          "PAPI_INT_INS":"70893",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"26351"
         },
         "12":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"24800",
-          "real_time_nsec":"4576",
-          "PAPI_TOT_INS":"19201",
-          "PAPI_INT_INS":"6619",
-          "PAPI_FP_INS":"4394",
-          "PAPI_LD_INS":"4922"
+          "cycles":"26816",
+          "real_time_nsec":"35168",
+          "PAPI_TOT_INS":"285973",
+          "PAPI_INT_INS":"139543",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"49225"
         },
         "13":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23616",
-          "real_time_nsec":"4160",
-          "PAPI_TOT_INS":"19175",
-          "PAPI_INT_INS":"6278",
-          "PAPI_FP_INS":"4394",
-          "PAPI_LD_INS":"4811"
+          "cycles":"22976",
+          "real_time_nsec":"10496",
+          "PAPI_TOT_INS":"76927",
+          "PAPI_INT_INS":"35183",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"14449"
         },
         "14":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"25056",
-          "real_time_nsec":"34080",
-          "PAPI_TOT_INS":"277120",
-          "PAPI_INT_INS":"135197",
-          "PAPI_FP_INS":"4393",
-          "PAPI_LD_INS":"47783"
+          "cycles":"27936",
+          "real_time_nsec":"5952",
+          "PAPI_TOT_INS":"19190",
+          "PAPI_INT_INS":"6407",
+          "PAPI_FP_INS":"4394",
+          "PAPI_LD_INS":"4842"
         }
       }
     },
@@ -807,152 +807,152 @@
         "0":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"26976",
-          "real_time_nsec":"12384",
-          "PAPI_TOT_INS":"101691",
-          "PAPI_INT_INS":"48552",
-          "PAPI_FP_INS":"4445",
-          "PAPI_LD_INS":"19093"
+          "cycles":"14304",
+          "real_time_nsec":"15200",
+          "PAPI_TOT_INS":"19938",
+          "PAPI_INT_INS":"7475",
+          "PAPI_FP_INS":"4404",
+          "PAPI_LD_INS":"5220"
         },
         "1":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"34912",
-          "real_time_nsec":"13600",
-          "PAPI_TOT_INS":"73680",
-          "PAPI_INT_INS":"33909",
+          "cycles":"20608",
+          "real_time_nsec":"18559",
+          "PAPI_TOT_INS":"108616",
+          "PAPI_INT_INS":"51322",
           "PAPI_FP_INS":"4402",
-          "PAPI_LD_INS":"14016"
+          "PAPI_LD_INS":"19846"
         },
         "2":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23680",
-          "real_time_nsec":"28896",
-          "PAPI_TOT_INS":"184678",
-          "PAPI_INT_INS":"88941",
-          "PAPI_FP_INS":"4394",
-          "PAPI_LD_INS":"32357"
+          "cycles":"22144",
+          "real_time_nsec":"12480",
+          "PAPI_TOT_INS":"94764",
+          "PAPI_INT_INS":"44042",
+          "PAPI_FP_INS":"4389",
+          "PAPI_LD_INS":"17400"
         },
         "3":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23200",
-          "real_time_nsec":"14496",
-          "PAPI_TOT_INS":"19205",
-          "PAPI_INT_INS":"6434",
-          "PAPI_FP_INS":"4394",
-          "PAPI_LD_INS":"4874"
+          "cycles":"24992",
+          "real_time_nsec":"15904",
+          "PAPI_TOT_INS":"193648",
+          "PAPI_INT_INS":"93454",
+          "PAPI_FP_INS":"4391",
+          "PAPI_LD_INS":"33864"
         },
         "4":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"21792",
-          "real_time_nsec":"7520",
-          "PAPI_TOT_INS":"59590",
-          "PAPI_INT_INS":"26386",
-          "PAPI_FP_INS":"4400",
-          "PAPI_LD_INS":"11510"
+          "cycles":"18112",
+          "real_time_nsec":"20384",
+          "PAPI_TOT_INS":"145072",
+          "PAPI_INT_INS":"69502",
+          "PAPI_FP_INS":"4391",
+          "PAPI_LD_INS":"25859"
         },
         "5":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"18944",
-          "real_time_nsec":"16352",
-          "PAPI_TOT_INS":"60098",
-          "PAPI_INT_INS":"26644",
-          "PAPI_FP_INS":"4389",
-          "PAPI_LD_INS":"11596"
+          "cycles":"25760",
+          "real_time_nsec":"22560",
+          "PAPI_TOT_INS":"215778",
+          "PAPI_INT_INS":"104621",
+          "PAPI_FP_INS":"4398",
+          "PAPI_LD_INS":"37598"
         },
         "6":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"18880",
-          "real_time_nsec":"22208",
-          "PAPI_TOT_INS":"67102",
-          "PAPI_INT_INS":"30152",
-          "PAPI_FP_INS":"4385",
-          "PAPI_LD_INS":"12759"
+          "cycles":"21408",
+          "real_time_nsec":"8192",
+          "PAPI_TOT_INS":"53320",
+          "PAPI_INT_INS":"23310",
+          "PAPI_FP_INS":"4394",
+          "PAPI_LD_INS":"10487"
         },
         "7":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"20288",
-          "real_time_nsec":"12768",
-          "PAPI_TOT_INS":"116648",
-          "PAPI_INT_INS":"54924",
-          "PAPI_FP_INS":"4386",
-          "PAPI_LD_INS":"21029"
+          "cycles":"20192",
+          "real_time_nsec":"25920",
+          "PAPI_TOT_INS":"232408",
+          "PAPI_INT_INS":"112796",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"40317"
         },
         "8":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"29696",
-          "real_time_nsec":"26880",
-          "PAPI_TOT_INS":"286754",
-          "PAPI_INT_INS":"140132",
-          "PAPI_FP_INS":"4391",
-          "PAPI_LD_INS":"49435"
+          "cycles":"21312",
+          "real_time_nsec":"13568",
+          "PAPI_TOT_INS":"124738",
+          "PAPI_INT_INS":"59011",
+          "PAPI_FP_INS":"4387",
+          "PAPI_LD_INS":"22381"
         },
         "9":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"20672",
-          "real_time_nsec":"17984",
-          "PAPI_TOT_INS":"134506",
-          "PAPI_INT_INS":"63799",
-          "PAPI_FP_INS":"4387",
-          "PAPI_LD_INS":"23975"
+          "cycles":"21472",
+          "real_time_nsec":"11904",
+          "PAPI_TOT_INS":"95446",
+          "PAPI_INT_INS":"44367",
+          "PAPI_FP_INS":"4395",
+          "PAPI_LD_INS":"17504"
         },
         "10":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"22464",
-          "real_time_nsec":"35008",
-          "PAPI_TOT_INS":"179267",
-          "PAPI_INT_INS":"86230",
-          "PAPI_FP_INS":"4390",
-          "PAPI_LD_INS":"31462"
+          "cycles":"26688",
+          "real_time_nsec":"15040",
+          "PAPI_TOT_INS":"137954",
+          "PAPI_INT_INS":"65631",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"24588"
         },
         "11":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"25792",
-          "real_time_nsec":"24640",
-          "PAPI_TOT_INS":"229708",
-          "PAPI_INT_INS":"111420",
-          "PAPI_FP_INS":"4385",
-          "PAPI_LD_INS":"39843"
+          "cycles":"29728",
+          "real_time_nsec":"12032",
+          "PAPI_TOT_INS":"19205",
+          "PAPI_INT_INS":"6299",
+          "PAPI_FP_INS":"4391",
+          "PAPI_LD_INS":"4817"
         },
         "12":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"25024",
-          "real_time_nsec":"23200",
-          "PAPI_TOT_INS":"96212",
-          "PAPI_INT_INS":"44738",
-          "PAPI_FP_INS":"4389",
-          "PAPI_LD_INS":"17639"
+          "cycles":"26880",
+          "real_time_nsec":"35360",
+          "PAPI_TOT_INS":"358714",
+          "PAPI_INT_INS":"175942",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"61366"
         },
         "13":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23968",
-          "real_time_nsec":"20768",
-          "PAPI_TOT_INS":"186880",
-          "PAPI_INT_INS":"90024",
-          "PAPI_FP_INS":"4392",
-          "PAPI_LD_INS":"32727"
+          "cycles":"22912",
+          "real_time_nsec":"20800",
+          "PAPI_TOT_INS":"268132",
+          "PAPI_INT_INS":"130897",
+          "PAPI_FP_INS":"4396",
+          "PAPI_LD_INS":"46352"
         },
         "14":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"25024",
-          "real_time_nsec":"15488",
-          "PAPI_TOT_INS":"86304",
-          "PAPI_INT_INS":"40065",
-          "PAPI_FP_INS":"4392",
-          "PAPI_LD_INS":"16080"
+          "cycles":"27936",
+          "real_time_nsec":"24960",
+          "PAPI_TOT_INS":"377164",
+          "PAPI_INT_INS":"185228",
+          "PAPI_FP_INS":"4393",
+          "PAPI_LD_INS":"64460"
         }
       }
     },
@@ -961,152 +961,152 @@
         "0":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"27072",
-          "real_time_nsec":"31200",
-          "PAPI_TOT_INS":"395626",
-          "PAPI_INT_INS":"195220",
-          "PAPI_FP_INS":"4398",
-          "PAPI_LD_INS":"68009"
+          "cycles":"23968",
+          "real_time_nsec":"30368",
+          "PAPI_TOT_INS":"320160",
+          "PAPI_INT_INS":"157256",
+          "PAPI_FP_INS":"4397",
+          "PAPI_LD_INS":"55293"
         },
         "1":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"35104",
-          "real_time_nsec":"21952",
-          "PAPI_TOT_INS":"339289",
-          "PAPI_INT_INS":"166446",
-          "PAPI_FP_INS":"4411",
-          "PAPI_LD_INS":"58220"
+          "cycles":"20448",
+          "real_time_nsec":"9920",
+          "PAPI_TOT_INS":"95644",
+          "PAPI_INT_INS":"44693",
+          "PAPI_FP_INS":"4393",
+          "PAPI_LD_INS":"17599"
         },
         "2":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23904",
-          "real_time_nsec":"24800",
-          "PAPI_TOT_INS":"238141",
-          "PAPI_INT_INS":"115655",
-          "PAPI_FP_INS":"4397",
-          "PAPI_LD_INS":"41262"
+          "cycles":"22176",
+          "real_time_nsec":"16768",
+          "PAPI_TOT_INS":"106194",
+          "PAPI_INT_INS":"49903",
+          "PAPI_FP_INS":"4390",
+          "PAPI_LD_INS":"19350"
         },
         "3":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23904",
-          "real_time_nsec":"10176",
-          "PAPI_TOT_INS":"98071",
-          "PAPI_INT_INS":"45664",
-          "PAPI_FP_INS":"4398",
-          "PAPI_LD_INS":"17932"
+          "cycles":"24992",
+          "real_time_nsec":"24160",
+          "PAPI_TOT_INS":"218654",
+          "PAPI_INT_INS":"105925",
+          "PAPI_FP_INS":"4395",
+          "PAPI_LD_INS":"38016"
         },
         "4":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"21152",
-          "real_time_nsec":"14048",
-          "PAPI_TOT_INS":"161845",
-          "PAPI_INT_INS":"77487",
-          "PAPI_FP_INS":"4398",
-          "PAPI_LD_INS":"28539"
+          "cycles":"18016",
+          "real_time_nsec":"5152",
+          "PAPI_TOT_INS":"19165",
+          "PAPI_INT_INS":"6228",
+          "PAPI_FP_INS":"4394",
+          "PAPI_LD_INS":"4787"
         },
         "5":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"18880",
-          "real_time_nsec":"20288",
-          "PAPI_TOT_INS":"152167",
-          "PAPI_INT_INS":"72765",
-          "PAPI_FP_INS":"4397",
-          "PAPI_LD_INS":"26954"
+          "cycles":"25760",
+          "real_time_nsec":"29792",
+          "PAPI_TOT_INS":"331714",
+          "PAPI_INT_INS":"162683",
+          "PAPI_FP_INS":"4398",
+          "PAPI_LD_INS":"56930"
         },
         "6":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"18528",
-          "real_time_nsec":"24480",
-          "PAPI_TOT_INS":"143065",
-          "PAPI_INT_INS":"68093",
-          "PAPI_FP_INS":"4395",
-          "PAPI_LD_INS":"25406"
+          "cycles":"21600",
+          "real_time_nsec":"19584",
+          "PAPI_TOT_INS":"129346",
+          "PAPI_INT_INS":"61303",
+          "PAPI_FP_INS":"4396",
+          "PAPI_LD_INS":"23153"
         },
         "7":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"20128",
-          "real_time_nsec":"22176",
-          "PAPI_TOT_INS":"157177",
-          "PAPI_INT_INS":"75181",
-          "PAPI_FP_INS":"4396",
-          "PAPI_LD_INS":"27791"
+          "cycles":"20256",
+          "real_time_nsec":"15424",
+          "PAPI_TOT_INS":"131030",
+          "PAPI_INT_INS":"62152",
+          "PAPI_FP_INS":"4411",
+          "PAPI_LD_INS":"23437"
         },
         "8":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"29920",
-          "real_time_nsec":"21536",
-          "PAPI_TOT_INS":"265489",
-          "PAPI_INT_INS":"129377",
-          "PAPI_FP_INS":"4396",
-          "PAPI_LD_INS":"45837"
+          "cycles":"21216",
+          "real_time_nsec":"31840",
+          "PAPI_TOT_INS":"249478",
+          "PAPI_INT_INS":"121304",
+          "PAPI_FP_INS":"4395",
+          "PAPI_LD_INS":"43141"
         },
         "9":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"20672",
-          "real_time_nsec":"31008",
-          "PAPI_TOT_INS":"110693",
-          "PAPI_INT_INS":"52001",
-          "PAPI_FP_INS":"4396",
-          "PAPI_LD_INS":"20046"
+          "cycles":"21472",
+          "real_time_nsec":"25408",
+          "PAPI_TOT_INS":"226378",
+          "PAPI_INT_INS":"109780",
+          "PAPI_FP_INS":"4393",
+          "PAPI_LD_INS":"39297"
         },
         "10":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"22496",
-          "real_time_nsec":"16928",
-          "PAPI_TOT_INS":"82915",
-          "PAPI_INT_INS":"38143",
-          "PAPI_FP_INS":"4400",
-          "PAPI_LD_INS":"15457"
+          "cycles":"26464",
+          "real_time_nsec":"32448",
+          "PAPI_TOT_INS":"353896",
+          "PAPI_INT_INS":"173522",
+          "PAPI_FP_INS":"4395",
+          "PAPI_LD_INS":"60555"
         },
         "11":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"25568",
-          "real_time_nsec":"23104",
-          "PAPI_TOT_INS":"300685",
-          "PAPI_INT_INS":"147003",
-          "PAPI_FP_INS":"4393",
-          "PAPI_LD_INS":"51715"
+          "cycles":"29760",
+          "real_time_nsec":"27744",
+          "PAPI_TOT_INS":"401086",
+          "PAPI_INT_INS":"197146",
+          "PAPI_FP_INS":"4394",
+          "PAPI_LD_INS":"68423"
         },
         "12":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"24832",
-          "real_time_nsec":"25344",
-          "PAPI_TOT_INS":"303151",
-          "PAPI_INT_INS":"148231",
-          "PAPI_FP_INS":"4399",
-          "PAPI_LD_INS":"52123"
+          "cycles":"27168",
+          "real_time_nsec":"12064",
+          "PAPI_TOT_INS":"123362",
+          "PAPI_INT_INS":"58333",
+          "PAPI_FP_INS":"4393",
+          "PAPI_LD_INS":"22163"
         },
         "13":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"24384",
-          "real_time_nsec":"19680",
-          "PAPI_TOT_INS":"242185",
-          "PAPI_INT_INS":"117756",
-          "PAPI_FP_INS":"4393",
-          "PAPI_LD_INS":"41989"
+          "cycles":"22944",
+          "real_time_nsec":"19488",
+          "PAPI_TOT_INS":"133996",
+          "PAPI_INT_INS":"63627",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"23915"
         },
         "14":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"24928",
-          "real_time_nsec":"12576",
-          "PAPI_TOT_INS":"153473",
-          "PAPI_INT_INS":"73453",
-          "PAPI_FP_INS":"4392",
-          "PAPI_LD_INS":"27219"
+          "cycles":"28096",
+          "real_time_nsec":"30944",
+          "PAPI_TOT_INS":"386255",
+          "PAPI_INT_INS":"189822",
+          "PAPI_FP_INS":"4396",
+          "PAPI_LD_INS":"65983"
         }
       }
     },
@@ -1115,152 +1115,152 @@
         "0":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"26848",
-          "real_time_nsec":"6976",
-          "PAPI_TOT_INS":"19859",
-          "PAPI_INT_INS":"7033",
-          "PAPI_FP_INS":"4395",
-          "PAPI_LD_INS":"5082"
+          "cycles":"23264",
+          "real_time_nsec":"14528",
+          "PAPI_TOT_INS":"157530",
+          "PAPI_INT_INS":"76148",
+          "PAPI_FP_INS":"4399",
+          "PAPI_LD_INS":"28265"
         },
         "1":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"34624",
-          "real_time_nsec":"25216",
-          "PAPI_TOT_INS":"192226",
-          "PAPI_INT_INS":"93167",
-          "PAPI_FP_INS":"4400",
-          "PAPI_LD_INS":"33783"
+          "cycles":"20640",
+          "real_time_nsec":"16544",
+          "PAPI_TOT_INS":"181811",
+          "PAPI_INT_INS":"88032",
+          "PAPI_FP_INS":"4435",
+          "PAPI_LD_INS":"32116"
         },
         "2":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23392",
-          "real_time_nsec":"14464",
-          "PAPI_TOT_INS":"19205",
-          "PAPI_INT_INS":"6397",
-          "PAPI_FP_INS":"4395",
-          "PAPI_LD_INS":"4847"
+          "cycles":"22176",
+          "real_time_nsec":"27456",
+          "PAPI_TOT_INS":"209851",
+          "PAPI_INT_INS":"101808",
+          "PAPI_FP_INS":"4391",
+          "PAPI_LD_INS":"36651"
         },
         "3":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"23264",
-          "real_time_nsec":"21248",
-          "PAPI_TOT_INS":"224992",
-          "PAPI_INT_INS":"109358",
-          "PAPI_FP_INS":"4395",
-          "PAPI_LD_INS":"39167"
+          "cycles":"25024",
+          "real_time_nsec":"31072",
+          "PAPI_TOT_INS":"258283",
+          "PAPI_INT_INS":"125745",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"44626"
         },
         "4":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"21184",
-          "real_time_nsec":"13696",
-          "PAPI_TOT_INS":"48154",
-          "PAPI_INT_INS":"20839",
-          "PAPI_FP_INS":"4391",
-          "PAPI_LD_INS":"9675"
+          "cycles":"17888",
+          "real_time_nsec":"22368",
+          "PAPI_TOT_INS":"160243",
+          "PAPI_INT_INS":"76672",
+          "PAPI_FP_INS":"4392",
+          "PAPI_LD_INS":"28264"
         },
         "5":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"18592",
-          "real_time_nsec":"27936",
-          "PAPI_TOT_INS":"175127",
-          "PAPI_INT_INS":"84298",
-          "PAPI_FP_INS":"4395",
-          "PAPI_LD_INS":"30800"
+          "cycles":"25792",
+          "real_time_nsec":"26496",
+          "PAPI_TOT_INS":"289411",
+          "PAPI_INT_INS":"141275",
+          "PAPI_FP_INS":"4390",
+          "PAPI_LD_INS":"49806"
         },
         "6":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"18720",
-          "real_time_nsec":"22176",
-          "PAPI_TOT_INS":"172793",
-          "PAPI_INT_INS":"83088",
-          "PAPI_FP_INS":"4396",
-          "PAPI_LD_INS":"30421"
+          "cycles":"21856",
+          "real_time_nsec":"28192",
+          "PAPI_TOT_INS":"210097",
+          "PAPI_INT_INS":"101602",
+          "PAPI_FP_INS":"4391",
+          "PAPI_LD_INS":"36579"
         },
         "7":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
           "cycles":"20352",
-          "real_time_nsec":"11872",
-          "PAPI_TOT_INS":"47074",
-          "PAPI_INT_INS":"20405",
-          "PAPI_FP_INS":"4395",
-          "PAPI_LD_INS":"9513"
+          "real_time_nsec":"17088",
+          "PAPI_TOT_INS":"101655",
+          "PAPI_INT_INS":"47657",
+          "PAPI_FP_INS":"4389",
+          "PAPI_LD_INS":"18603"
         },
         "8":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"29760",
-          "real_time_nsec":"4448",
-          "PAPI_TOT_INS":"19205",
-          "PAPI_INT_INS":"6479",
-          "PAPI_FP_INS":"4392",
-          "PAPI_LD_INS":"4856"
+          "cycles":"21184",
+          "real_time_nsec":"27072",
+          "PAPI_TOT_INS":"202303",
+          "PAPI_INT_INS":"97705",
+          "PAPI_FP_INS":"4386",
+          "PAPI_LD_INS":"35277"
         },
         "9":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"20608",
-          "real_time_nsec":"18720",
-          "PAPI_TOT_INS":"38016",
-          "PAPI_INT_INS":"15896",
-          "PAPI_FP_INS":"4393",
-          "PAPI_LD_INS":"8005"
+          "cycles":"21536",
+          "real_time_nsec":"18752",
+          "PAPI_TOT_INS":"195559",
+          "PAPI_INT_INS":"94346",
+          "PAPI_FP_INS":"4386",
+          "PAPI_LD_INS":"34151"
         },
         "10":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"22528",
-          "real_time_nsec":"16320",
-          "PAPI_TOT_INS":"124526",
-          "PAPI_INT_INS":"58928",
-          "PAPI_FP_INS":"4399",
-          "PAPI_LD_INS":"22384"
+          "cycles":"26496",
+          "real_time_nsec":"24256",
+          "PAPI_TOT_INS":"277429",
+          "PAPI_INT_INS":"135278",
+          "PAPI_FP_INS":"4388",
+          "PAPI_LD_INS":"47805"
         },
         "11":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"25760",
-          "real_time_nsec":"11488",
-          "PAPI_TOT_INS":"45658",
-          "PAPI_INT_INS":"19558",
-          "PAPI_FP_INS":"4398",
-          "PAPI_LD_INS":"9242"
+          "cycles":"29984",
+          "real_time_nsec":"11904",
+          "PAPI_TOT_INS":"143359",
+          "PAPI_INT_INS":"68445",
+          "PAPI_FP_INS":"4389",
+          "PAPI_LD_INS":"25531"
         },
         "12":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"25088",
-          "real_time_nsec":"18272",
-          "PAPI_TOT_INS":"176842",
-          "PAPI_INT_INS":"85067",
-          "PAPI_FP_INS":"4395",
-          "PAPI_LD_INS":"31063"
+          "cycles":"26848",
+          "real_time_nsec":"12928",
+          "PAPI_TOT_INS":"91147",
+          "PAPI_INT_INS":"42215",
+          "PAPI_FP_INS":"4390",
+          "PAPI_LD_INS":"16783"
         },
         "13":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"24384",
-          "real_time_nsec":"28864",
-          "PAPI_TOT_INS":"209396",
-          "PAPI_INT_INS":"101339",
-          "PAPI_FP_INS":"4399",
-          "PAPI_LD_INS":"36489"
+          "cycles":"23168",
+          "real_time_nsec":"17472",
+          "PAPI_TOT_INS":"88297",
+          "PAPI_INT_INS":"40790",
+          "PAPI_FP_INS":"4388",
+          "PAPI_LD_INS":"16304"
         },
         "14":{
           "name":"parallel-calculation",
           "parent_region_id":"-1",
-          "cycles":"24416",
-          "real_time_nsec":"27264",
-          "PAPI_TOT_INS":"283787",
-          "PAPI_INT_INS":"138475",
-          "PAPI_FP_INS":"4392",
-          "PAPI_LD_INS":"48872"
+          "cycles":"28096",
+          "real_time_nsec":"13728",
+          "PAPI_TOT_INS":"104907",
+          "PAPI_INT_INS":"49452",
+          "PAPI_FP_INS":"4396",
+          "PAPI_LD_INS":"19227"
         }
       }
     }

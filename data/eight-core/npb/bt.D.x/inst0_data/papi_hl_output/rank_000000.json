@@ -1,7 +1,7 @@
 {
   "papi_version":"7.0.1.0",
   "cpu_info":"Arm Neoverse V2",
-  "max_cpu_rate_mhz":"3366",
+  "max_cpu_rate_mhz":"3384",
   "min_cpu_rate_mhz":"81",
   "event_definitions":{
     "PAPI_TOT_INS":{
@@ -27,12 +27,12 @@
         "0":{
           "name":"roi",
           "parent_region_id":"-1",
-          "cycles":"958588926688",
-          "real_time_nsec":"958588926912",
-          "PAPI_TOT_INS":"9987558044479",
-          "PAPI_INT_INS":"541474755291",
-          "PAPI_FP_INS":"3911009578199",
-          "PAPI_LD_INS":"3171835603110"
+          "cycles":"989572849440",
+          "real_time_nsec":"989568271251",
+          "PAPI_TOT_INS":"9987398252081",
+          "PAPI_INT_INS":"541424103362",
+          "PAPI_FP_INS":"3911089799480",
+          "PAPI_LD_INS":"3171943690614"
         }
       }
     }
