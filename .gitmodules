@@ -7,3 +7,6 @@
 [submodule "microbench"]
 	path = microbench
 	url = https://github.com/mahyarsamani/microbench.git
+[submodule "simple-vector-bench/spatter/json"]
+	path = simple-vector-bench/spatter/json
+	url = git@github.com:mahyarsamani/json.git
