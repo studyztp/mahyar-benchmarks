@@ -10,7 +10,6 @@
 [submodule "simple-vector-bench/spatter/json"]
 	path = simple-vector-bench/spatter/json
 	url = https://github.com/mahyarsamani/json.git
-
 [submodule "UME"]
 	path = UME
 	url = https://github.com/mahyarsamani/UME.git
