@@ -1,5 +1,7 @@
 #!/bin/sh
 
+mkdir -p bin
+
 make BT CLASS=A PLATFORM=gem5
 make CG CLASS=A PLATFORM=gem5
 make DC CLASS=A PLATFORM=gem5
