@@ -8,6 +8,9 @@ class FSCommandWrapper:
     def generate_cmdline(self):
         raise NotImplementedError
 
+    def generate_id_dict(self):
+        raise NotImplementedError
+
 
 class BransonCommandWrapper(FSCommandWrapper):
     input_translator = {
@@ -15,19 +18,24 @@ class BransonCommandWrapper(FSCommandWrapper):
         "hohlraum_multi": "3D_hohlraum_multi_node",
     }
 
-    def __init__(self, input: str):
+    def __init__(self, input_name: str):
         super().__init__("/home/ubuntu/benchmarks/branson/build/BRANSON")
-        input_name = BransonCommandWrapper.input_translator[input]
-        self._input = (
-            f"/home/ubuntu/benchmarks/branson/inputs/{input_name}.xml"
+        self._input_name = BransonCommandWrapper.input_translator[input_name]
+        self._input_path = (
+            f"/home/ubuntu/benchmarks/branson/inputs/{self._input_name}.xml"
         )
 
     def generate_cmdline(self):
-        return f"{self._binary_path} {self._input}"
+        return f"{self._binary_path} {self._input_path}"
+
+    def generate_id_dict(self):
+        return {"name": "branson", "input": self._input_name}
 
 
 class NPBCommandWrapper(FSCommandWrapper):
     def __init__(self, workload: str, size: str):
+        self._workload = workload
+        self._size = size
         binary_name = f"{workload}.{size}.x"
         super().__init__(
             f"/home/ubuntu/benchmarks/NPB3.4-OMP/bin/{binary_name}"
@@ -35,6 +43,9 @@ class NPBCommandWrapper(FSCommandWrapper):
 
     def generate_cmdline(self):
         return f"{self._binary_path}"
+
+    def generate_id_dict(self):
+        return {"name": "npb", "workload": self._workload, "size": self._size}
 
 
 class SimpleVectorWrapper(FSCommandWrapper):
@@ -69,6 +80,9 @@ class SimpleVectorWrapper(FSCommandWrapper):
                     "bool_like argument should be a string/positive integer/boolean."
                 )
 
+        self._processing_mode = (
+            "sve" if try_convert_bool(use_sve) else "scalar"
+        )
         suffix = "-sve.gem5" if try_convert_bool(use_sve) else ".gem5"
         super().__init__(binary_path + suffix)
 
@@ -90,6 +104,14 @@ class GUPSCommandWrapper(SimpleVectorWrapper):
     def generate_cmdline(self):
         return f"{self._binary_path} {self._num_elements} {self._updates_per_burst}"
 
+    def generate_id_dict(self):
+        return {
+            "name": "gups",
+            "processing_mode": self._processing_mode,
+            "num_elements": self._num_elements,
+            "updates_per_burst": self._updates_per_burst,
+        }
+
 
 class PermutatingGatherCommandWrapper(SimpleVectorWrapper):
     def __init__(self, seed: int, mod: int, use_sve: Union[bool, str]):
@@ -102,6 +124,14 @@ class PermutatingGatherCommandWrapper(SimpleVectorWrapper):
 
     def generate_cmdline(self):
         return f"{self._binary_path} {self._seed} {self._mod}"
+
+    def generate_id_dict(self):
+        return {
+            "name": "permutating-gather",
+            "processing_mode": self._processing_mode,
+            "seed": self._seed,
+            "mod": self._mod,
+        }
 
 
 class PermutatingScatterCommandWrapper(SimpleVectorWrapper):
@@ -116,6 +146,14 @@ class PermutatingScatterCommandWrapper(SimpleVectorWrapper):
     def generate_cmdline(self):
         return f"{self._binary_path} {self._seed} {self._mod}"
 
+    def generate_id_dict(self):
+        return {
+            "name": "permutating-scatter",
+            "processing_mode": self._processing_mode,
+            "seed": self._seed,
+            "mod": self._mod,
+        }
+
 
 class SpatterCommandWrapper(SimpleVectorWrapper):
     def __init__(self, json_file_path: str, use_sve: Union[bool, str]):
@@ -123,10 +161,18 @@ class SpatterCommandWrapper(SimpleVectorWrapper):
             "/home/ubuntu/benchmarks/simple-vector-bench/spatter/bin/spatter",
             use_sve,
         )
+        self._json_file_loc = json_file_path
         self._json_file_path = f"/home/ubuntu/benchmarks/simple-vector-bench/spatter/patterns/{json_file_path}"
 
     def generate_cmdline(self):
         return f"{self._binary_path} {self._json_file_path}"
+
+    def generate_id_dict(self):
+        return {
+            "name": "spatter",
+            "processing_mode": self._processing_mode,
+            "json_file_loc": self._json_file_loc,
+        }
 
 
 class StreamCommandWrapper(SimpleVectorWrapper):
@@ -139,3 +185,10 @@ class StreamCommandWrapper(SimpleVectorWrapper):
 
     def generate_cmdline(self):
         return f"{self._binary_path} {self._array_size}"
+
+    def generate_id_dict(self):
+        return {
+            "name": "stream",
+            "processing_mode": self._processing_mode,
+            "array_size": self._array_size,
+        }
