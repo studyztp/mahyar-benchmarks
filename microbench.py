@@ -1,12 +1,12 @@
 from gem5.resources.resource import BinaryResource
-from gem5.resources.workload import CustomWorkload
+from gem5.resources.workload import WorkloadResource
 
 from pathlib import Path
 
 _base_dir = Path(__file__).parent.absolute()
 
 workloads = {
-    "SVE_SAXPY": CustomWorkload(
+    "SVE_SAXPY": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -14,7 +14,7 @@ workloads = {
             )
         },
     ),
-    "CRf": CustomWorkload(
+    "CRf": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -22,7 +22,7 @@ workloads = {
             )
         },
     ),
-    "CCh": CustomWorkload(
+    "CCh": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -30,7 +30,7 @@ workloads = {
             )
         },
     ),
-    "MIP": CustomWorkload(
+    "MIP": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -38,7 +38,7 @@ workloads = {
             )
         },
     ),
-    "CCe": CustomWorkload(
+    "CCe": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -46,7 +46,7 @@ workloads = {
             )
         },
     ),
-    "CCa": CustomWorkload(
+    "CCa": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -54,7 +54,7 @@ workloads = {
             )
         },
     ),
-    "MIM2": CustomWorkload(
+    "MIM2": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -62,7 +62,7 @@ workloads = {
             )
         },
     ),
-    "DPT": CustomWorkload(
+    "DPT": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -70,7 +70,7 @@ workloads = {
             )
         },
     ),
-    "ML2_st": CustomWorkload(
+    "ML2_st": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -78,7 +78,7 @@ workloads = {
             )
         },
     ),
-    "EF": CustomWorkload(
+    "EF": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -86,7 +86,7 @@ workloads = {
             )
         },
     ),
-    "MIM": CustomWorkload(
+    "MIM": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -94,7 +94,7 @@ workloads = {
             )
         },
     ),
-    "CS1": CustomWorkload(
+    "CS1": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -102,7 +102,7 @@ workloads = {
             )
         },
     ),
-    "CCl": CustomWorkload(
+    "CCl": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -110,7 +110,7 @@ workloads = {
             )
         },
     ),
-    "STc": CustomWorkload(
+    "STc": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -118,7 +118,7 @@ workloads = {
             )
         },
     ),
-    "DP1f": CustomWorkload(
+    "DP1f": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -126,7 +126,7 @@ workloads = {
             )
         },
     ),
-    "STL2b": CustomWorkload(
+    "STL2b": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -134,7 +134,7 @@ workloads = {
             )
         },
     ),
-    "CS3": CustomWorkload(
+    "CS3": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -142,7 +142,7 @@ workloads = {
             )
         },
     ),
-    "MD": CustomWorkload(
+    "MD": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -150,7 +150,7 @@ workloads = {
             )
         },
     ),
-    "DP1d": CustomWorkload(
+    "DP1d": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -158,7 +158,7 @@ workloads = {
             )
         },
     ),
-    "ML2_BW_ld": CustomWorkload(
+    "ML2_BW_ld": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -166,7 +166,7 @@ workloads = {
             )
         },
     ),
-    "STL2": CustomWorkload(
+    "STL2": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -174,7 +174,7 @@ workloads = {
             )
         },
     ),
-    "M_Dyn": CustomWorkload(
+    "M_Dyn": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -182,7 +182,7 @@ workloads = {
             )
         },
     ),
-    "EI": CustomWorkload(
+    "EI": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -190,7 +190,7 @@ workloads = {
             )
         },
     ),
-    "EM1": CustomWorkload(
+    "EM1": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -198,7 +198,7 @@ workloads = {
             )
         },
     ),
-    "MC": CustomWorkload(
+    "MC": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -206,7 +206,7 @@ workloads = {
             )
         },
     ),
-    "MI": CustomWorkload(
+    "MI": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -214,7 +214,7 @@ workloads = {
             )
         },
     ),
-    "CRm": CustomWorkload(
+    "CRm": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -222,7 +222,7 @@ workloads = {
             )
         },
     ),
-    "CCm": CustomWorkload(
+    "CCm": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -230,7 +230,7 @@ workloads = {
             )
         },
     ),
-    "CF1": CustomWorkload(
+    "CF1": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -238,7 +238,7 @@ workloads = {
             )
         },
     ),
-    "ML2_BW_ldst": CustomWorkload(
+    "ML2_BW_ldst": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -246,7 +246,7 @@ workloads = {
             )
         },
     ),
-    "MM": CustomWorkload(
+    "MM": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -254,7 +254,7 @@ workloads = {
             )
         },
     ),
-    "SVE_SUM": CustomWorkload(
+    "SVE_SUM": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -262,7 +262,7 @@ workloads = {
             )
         },
     ),
-    "ML2": CustomWorkload(
+    "ML2": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -270,7 +270,7 @@ workloads = {
             )
         },
     ),
-    "MM_st": CustomWorkload(
+    "MM_st": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -278,7 +278,7 @@ workloads = {
             )
         },
     ),
-    "MCS": CustomWorkload(
+    "MCS": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -286,7 +286,7 @@ workloads = {
             )
         },
     ),
-    "EM5": CustomWorkload(
+    "EM5": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -294,7 +294,7 @@ workloads = {
             )
         },
     ),
-    "DPTd": CustomWorkload(
+    "DPTd": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -302,7 +302,7 @@ workloads = {
             )
         },
     ),
-    "ML2_BW_st": CustomWorkload(
+    "ML2_BW_st": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -310,7 +310,7 @@ workloads = {
             )
         },
     ),
-    "ED1": CustomWorkload(
+    "ED1": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -318,7 +318,7 @@ workloads = {
             )
         },
     ),
-    "CRd": CustomWorkload(
+    "CRd": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -326,7 +326,7 @@ workloads = {
             )
         },
     ),
-    "DPcvt": CustomWorkload(
+    "DPcvt": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
@@ -334,7 +334,7 @@ workloads = {
             )
         },
     ),
-    "CCh_st": CustomWorkload(
+    "CCh_st": WorkloadResource(
         function="set_se_binary_workload",
         parameters={
             "binary": BinaryResource(
