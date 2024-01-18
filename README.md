@@ -1,5 +1,113 @@
 # Benchmarks
 
+For instructions on how to build the benchmarks please refer to [this section](#building-benchmarks).
+For instructions on how to run the benchmarks please refer to [this section]().
+
+## Status
+
+Coming Soon: UME
+
+Below are status boards of all the tests.
+
+## NASA Parallel Benchmarks (NPB)
+
+### Class A
+
+| Workload | Azacca One Socket   | Azacca Eight Core Def | Azacca Eight Core Opt | Grace One Socket   | Grace Eight Core Def | Grace Eight Core Opt |
+|----------|---------------------|-----------------------|-----------------------|--------------------|----------------------|----------------------|
+| bt       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| cg       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| dc       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| ep       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| ft       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| is       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| lu       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| mg       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| sp       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| ua       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+
+### Class B
+
+| Workload | Azacca One Socket   | Azacca Eight Core Def | Azacca Eight Core Opt | Grace One Socket   | Grace Eight Core Def | Grace Eight Core Opt |
+|----------|---------------------|-----------------------|-----------------------|--------------------|----------------------|----------------------|
+| bt       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| cg       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| dc       | :x:                 | :x:                   | :x:                   | :x:                | :white_check_mark:   | :x:                  |
+| ep       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| ft       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| is       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| lu       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| mg       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| sp       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| ua       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+
+### Class D
+
+| Workload | Azacca One Socket   | Azacca Eight Core Def | Azacca Eight Core Opt | Grace One Socket   | Grace Eight Core Def | Grace Eight Core Opt |
+|----------|---------------------|-----------------------|-----------------------|--------------------|----------------------|----------------------|
+| bt       | :x:                 | :x:                   | :x:                   | :x:                | :white_check_mark:   | :x:                  |
+| cg       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
+| dc       | :x:                 | :x:                   | :x:                   | :x:                | :x:                  | :x:                  |
+| ep       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
+| ft       | :x:                 | :x:                   | :x:                   | :x:                | :x:                  | :x:                  |
+| is       | :x:                 | :x:                   | :x:                   | :x:                | :x:                  | :x:                  |
+| lu       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
+| mg       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
+| sp       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
+| ua       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
+
+## Branson
+
+| Input                       | Azacca One Socket | Azacca Eight Core Def | Azacca Eight Core Opt | Grace One Socket | Grace Eight Core Def | Grace Eight Core Opt |
+|-----------------------------|-------------------|-----------------------|-----------------------|------------------|----------------------|----------------------|
+| 3D_hohlraum_single_node.xml | :x:               | :x:                   | :x:                   | :x:              | :x:                  | :x:                  |
+| 3D_hohlraum_multi_node.xml  | :x:               | :x:                   | :x:                   | :x:              | :x:                  | :x:                  |
+
+## Running the benchmarks
+
+There is a shell script with the name `run.sh` in each benchmark's directory that you can use to run the benchmarks.
+All these scripts take the following three common inputs.
+
+* machine: Name of the machine used for running the benchmark. E.g. azacca (a machine with Ampere Altra Max 80-core), grace.
+* config: NUMA configuration to run the tests. You can choose from `socket` (the whole machine), `eight-core-def` (first 8 physical cores).
+* suffix: a suffix to distinguish the tests if someone else runs the same tests. E.g. your name.
+
+For an example command look at each section's example.
+
+In addition, each script takes workload specific inputs that are listed below.
+
+### NPB3.4-OMP/run.sh
+
+It takes two additional inputs `workload`, and `size` which are comma separated lists of workloads and sizes to run.
+Below is an example command to run `workload`: *bt*, *cg*, *dc* with `size`: *A*, *B* for `machine`: *grace*, `config`: *eight-core-def*, and `suffix`: *test*.
+
+```shell
+./run.sh --machine grace --config eight-core-def --suffix test --workload bt,cg --size A,B
+```
+
+After running this command you can find your papi data under
+
+```shell
+{$PWD}/../data/grace-eight-core-def-test/npb
+```
+
+### branson/run.sh
+
+It takes an additional input `input` which a comma separate list of paths to the xml input files for branson.
+Below is an example command to run branson with `input`: *inputs/big_cube.xml* for `machine`: *grace*, `config`: *eight-core-def*, and `suffix`: *test*.
+
+```shell
+./run.sh --machine grace --config eight-core-def --suffix test --input inputs/big_cube.xml
+```
+
+After running this command you can find your papi data under
+
+```shell
+{$PWD}/../data/grace-eight-core-def-test/branson
+```
+
+## Building Benchmarks
+
 **NOTE**: All the instructions mentioned in this README have been tested on ARM-based
 machines with Ubuntu 22.04.
 
