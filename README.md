@@ -32,7 +32,7 @@ Below are status boards of all the tests.
 |----------|---------------------|-----------------------|-----------------------|--------------------|----------------------|----------------------|
 | bt       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
 | cg       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
-| dc       | :x:                 | :x:                   | :x:                   | :x:                | :white_check_mark:   | :x:                  |
+| dc       | :x:                 | :x:                   | :x:                   | :white_checkmark:  | :white_check_mark:   | :x:                  |
 | ep       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
 | ft       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
 | is       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
@@ -45,14 +45,14 @@ Below are status boards of all the tests.
 
 | Workload | Azacca One Socket   | Azacca Eight Core Def | Azacca Eight Core Opt | Grace One Socket   | Grace Eight Core Def | Grace Eight Core Opt |
 |----------|---------------------|-----------------------|-----------------------|--------------------|----------------------|----------------------|
-| bt       | :x:                 | :x:                   | :x:                   | :x:                | :white_check_mark:   | :x:                  |
-| cg       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
+| bt       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| cg       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
 | dc       | :x:                 | :x:                   | :x:                   | :x:                | :x:                  | :x:                  |
-| ep       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
+| ep       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
 | ft       | :x:                 | :x:                   | :x:                   | :x:                | :x:                  | :x:                  |
-| is       | :x:                 | :x:                   | :x:                   | :x:                | :x:                  | :x:                  |
-| lu       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
-| mg       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
+| is (C)   | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
+| lu       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| mg       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
 | sp       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
 | ua       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
 
