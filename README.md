@@ -58,12 +58,12 @@ Below are status boards of all the tests.
 
 ## Branson
 
-| Input                               | Azacca One Socket   | Azacca Eight Core Def | Azacca Eight Core Opt | Grace One Socket | Grace Eight Core Def | Grace Eight Core Opt |
-|-------------------------------------|---------------------|-----------------------|-----------------------|------------------|----------------------|----------------------|
-| 3D_hohlraum_single_node.xml         | :x:                 | :x:                   | :x:                   | :x:              | :x:                  | :x:                  |
-| 3D_hohlraum_single_node_shrunk.xml  | :x:                 | :x:                   | :x:                   | :x:              | :x:                  | :x:                  |
-| 3D_hohlraum_multi_node.xml          | :x:                 | :x:                   | :x:                   | :x:              | :x:                  | :x:                  |
-| 3D_hohlraum_multi_node_shrunk.xml   | :x:                 | :x:                   | :x:                   | :x:              | :x:                  | :x:                  |
+| Input                               | Azacca One Socket   | Azacca Eight Core Def | Azacca Eight Core Opt | Grace One Socket   | Grace Eight Core Def | Grace Eight Core Opt |
+|-------------------------------------|---------------------|-----------------------|-----------------------|--------------------|----------------------|----------------------|
+| 3D_hohlraum_single_node.xml         | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| 3D_hohlraum_single_node_shrunk.xml  | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| 3D_hohlraum_multi_node.xml          | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| 3D_hohlraum_multi_node_shrunk.xml   | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
 
 ## Running the benchmarks
 

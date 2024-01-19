@@ -1,0 +1,44 @@
+{
+  "papi_version":"7.0.1.0",
+  "cpu_info":"Arm Neoverse V2",
+  "max_cpu_rate_mhz":"3474",
+  "min_cpu_rate_mhz":"81",
+  "event_definitions":{
+    "PAPI_SR_INS":{
+      "component":"perf_event",
+      "type":"delta"
+    },
+    "PAPI_BR_INS":{
+      "component":"perf_event",
+      "type":"delta"
+    },
+    "PAPI_VEC_INS":{
+      "component":"perf_event",
+      "type":"delta"
+    }
+  },
+  "threads":{
+    "0":{
+      "regions":{
+        "0":{
+          "name":"setup",
+          "parent_region_id":"-1",
+          "cycles":"20090240",
+          "real_time_nsec":"20089084",
+          "PAPI_SR_INS":"14191738",
+          "PAPI_BR_INS":"27196951",
+          "PAPI_VEC_INS":"1248789"
+        },
+        "1":{
+          "name":"roi",
+          "parent_region_id":"-1",
+          "cycles":"88702707648",
+          "real_time_nsec":"88699159301",
+          "PAPI_SR_INS":"114394300744",
+          "PAPI_BR_INS":"193237095569",
+          "PAPI_VEC_INS":"18219011386"
+        }
+      }
+    }
+  }
+}
