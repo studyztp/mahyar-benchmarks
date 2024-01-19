@@ -32,7 +32,7 @@ Below are status boards of all the tests.
 |----------|---------------------|-----------------------|-----------------------|--------------------|----------------------|----------------------|
 | bt       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
 | cg       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
-| dc       | :x:                 | :x:                   | :x:                   | :white_checkmark:  | :white_check_mark:   | :x:                  |
+| dc       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
 | ep       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
 | ft       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
 | is       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
