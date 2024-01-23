@@ -50,11 +50,11 @@ Below are status boards of all the tests.
 | dc       | :x:                 | :x:                   | :x:                   | :x:                | :x:                  | :x:                  |
 | ep       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
 | ft       | :x:                 | :x:                   | :x:                   | :x:                | :x:                  | :x:                  |
-| is (C)   | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
+| is (C)   | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
 | lu       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
 | mg       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
-| sp       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
-| ua       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :x:                  | :x:                  |
+| sp       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
+| ua       | :x:                 | :x:                   | :x:                   | :white_check_mark: | :white_check_mark:   | :x:                  |
 
 ## Branson
 
