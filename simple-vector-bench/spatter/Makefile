@@ -24,7 +24,7 @@ papi: kernels
 	$(CXX) -o $(BIN_DIR)/spatter$(EXT).papi spatter.cpp $(BIN_DIR)/kernels.o $(CXXFLAGS) -Iinclude -Ijson/single_include/nlohmann -I$(ROI_DIR)/include -I$(ROI_DIR)/papi/install/include -L$(ROI_DIR)/lib -L$(ROI_DIR)/papi/install/lib -lroi.papi -lpapi -lpthread
 
 gem5: kernels
-	$(CXX) -o $(BIN_DIR)/spatter$(EXT).gem5 spatter.cpp $(BIN_DIR)/kernels.o $(CXXFLAGS) -Iinclude -Ijson/single_include/nlohmann -I$(ROI_DIR)/include -I$(ROI_DIR)/gem5/include -L$(ROI_DIR)/lib -L$(ROI_DIR)/gem5/lib -lroi.gem5 -lm5
+	$(CXX) -o $(BIN_DIR)/spatter$(EXT).gem5 spatter.cpp $(BIN_DIR)/kernels.o $(CXXFLAGS) -Iinclude -Ijson/single_include/nlohmann -I$(ROI_DIR)/include -I$(ROI_DIR)/gem5/include -L$(ROI_DIR)/lib -L$(ROI_DIR)/gem5/lib -lroi.gem5fs -lm5
 
 native: kernels
 	$(CXX) -o $(BIN_DIR)/spatter$(EXT).native spatter.cpp $(BIN_DIR)/kernels.o $(CXXFLAGS) -Iinclude -Ijson/single_include/nlohmann -I$(ROI_DIR)/include -L$(ROI_DIR)/lib -lroi.native

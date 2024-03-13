@@ -2,4 +2,6 @@
 *.gem5*
 *.native*
 *.o
+*bin*
+__pycache__
 

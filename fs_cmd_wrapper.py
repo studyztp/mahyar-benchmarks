@@ -13,16 +13,17 @@ class FSCommandWrapper:
 
 
 class BransonCommandWrapper(FSCommandWrapper):
-    input_translator = {
-        "hohlraum_single": "3D_hohlraum_multi_node",
-        "hohlraum_multi": "3D_hohlraum_multi_node",
+    _base_input_path = "/home/ubuntu/benchmarks/branson/inputs"
+    _input_translator = {
+        "hohlraum_single": "3D_hohlraum_multi_node.xml",
+        "hohlraum_multi": "3D_hohlraum_multi_node.xml",
     }
 
     def __init__(self, input_name: str):
         super().__init__("/home/ubuntu/benchmarks/branson/build/BRANSON")
         self._input_name = BransonCommandWrapper.input_translator[input_name]
         self._input_path = (
-            f"/home/ubuntu/benchmarks/branson/inputs/{self._input_name}.xml"
+            f"{BransonCommandWrapper._base_input_path}/{self._input_name}"
         )
 
     def generate_cmdline(self):
@@ -30,6 +31,30 @@ class BransonCommandWrapper(FSCommandWrapper):
 
     def generate_id_dict(self):
         return {"name": "branson", "input": self._input_name}
+
+
+class UMECommandWrapper(FSCommandWrapper):
+    _base_input_path = "/home/ubuntu/benchmarks/UME/inputs"
+    _input_translator = {
+        "blake": ("blake/blake", 1),
+        "pipe_3d": ("pipe_3d/pipe_3d_00001", 8),
+    }
+
+    def __init__(self, input_name: str):
+        super().__init__("/home/ubuntu/benchmarks/UME/build/src/ume_mpi")
+        self._input_name = input_name
+        self._input_file, self._num_processes = (
+            UMECommandWrapper._input_translator[input_name]
+        )
+
+    def generate_cmdline(self):
+        return (
+            f"mpirun -n {self._num_processes} "
+            f"{self._binary_path} {self._input_file}"
+        )
+
+    def generate_id_dict(self):
+        return {"name": "ume", "input": self._input_name}
 
 
 class NPBCommandWrapper(FSCommandWrapper):
@@ -77,7 +102,8 @@ class SimpleVectorWrapper(FSCommandWrapper):
                 return bool_like
             else:
                 raise ValueError(
-                    "bool_like argument should be a string/positive integer/boolean."
+                    "bool_like argument should be a "
+                    "string/positive integer/boolean."
                 )
 
         self._processing_mode = (
@@ -102,7 +128,11 @@ class GUPSCommandWrapper(SimpleVectorWrapper):
         self._updates_per_burst = updates_per_burst
 
     def generate_cmdline(self):
-        return f"{self._binary_path} {self._num_elements} {self._updates_per_burst}"
+        return (
+            f"{self._binary_path} "
+            f"{self._num_elements} "
+            f"{self._updates_per_burst}"
+        )
 
     def generate_id_dict(self):
         return {
@@ -116,7 +146,8 @@ class GUPSCommandWrapper(SimpleVectorWrapper):
 class PermutatingGatherCommandWrapper(SimpleVectorWrapper):
     def __init__(self, seed: int, mod: int, use_sve: Union[bool, str]):
         super().__init__(
-            "/home/ubuntu/benchmarks/simple-vector-bench/permutating-gather/bin/permutating-gather",
+            "/home/ubuntu/benchmarks/simple-vector-bench/"
+            "permutating-gather/bin/permutating-gather",
             use_sve,
         )
         self._seed = seed
@@ -137,7 +168,8 @@ class PermutatingGatherCommandWrapper(SimpleVectorWrapper):
 class PermutatingScatterCommandWrapper(SimpleVectorWrapper):
     def __init__(self, seed: int, mod: int, use_sve: Union[bool, str]):
         super().__init__(
-            "/home/ubuntu/benchmarks/simple-vector-bench/permutating-scatter/bin/permutating-scatter",
+            "/home/ubuntu/benchmarks/simple-vector-bench/"
+            "permutating-scatter/bin/permutating-scatter",
             use_sve,
         )
         self._seed = seed
@@ -156,13 +188,26 @@ class PermutatingScatterCommandWrapper(SimpleVectorWrapper):
 
 
 class SpatterCommandWrapper(SimpleVectorWrapper):
-    def __init__(self, json_file_path: str, use_sve: Union[bool, str]):
+    _base_input_path = (
+        "/home/ubuntu/benchmarks/simple-vector-bench/spatter/patterns"
+    )
+    _input_translator = {
+        "flag": "flag/static_2d/001.json",
+        "flag-nonfp": "flag/static_2d/001.nonfp.json",
+        "flag-fp": "flag/static_2d/001.fp.json",
+        "xrage": "xrage/asteroid/spatter.json",
+    }
+
+    def __init__(self, pattern_name: str, use_sve: Union[bool, str]):
         super().__init__(
             "/home/ubuntu/benchmarks/simple-vector-bench/spatter/bin/spatter",
             use_sve,
         )
-        self._json_file_loc = json_file_path
-        self._json_file_path = f"/home/ubuntu/benchmarks/simple-vector-bench/spatter/patterns/{json_file_path}"
+        self._pattern_name = pattern_name
+        self._json_file_path = (
+            f"{SpatterCommandWrapper._base_input_path}/"
+            f"{SpatterCommandWrapper._input_translator[self._pattern_name]}"
+        )
 
     def generate_cmdline(self):
         return f"{self._binary_path} {self._json_file_path}"
@@ -171,7 +216,7 @@ class SpatterCommandWrapper(SimpleVectorWrapper):
         return {
             "name": "spatter",
             "processing_mode": self._processing_mode,
-            "json_file_loc": self._json_file_loc,
+            "pattern_name": self._pattern_name,
         }
 
 

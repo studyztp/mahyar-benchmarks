@@ -44,7 +44,7 @@ void thread_init_()
     PAPI_thread_init(pthread_self);
 }
 
-#elif defined(GEM5)
+#elif defined(GEM5SE)
 #include "gem5/m5ops.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -60,6 +60,40 @@ void region_end_(const char* region)
 {}
 
 void roi_begin_() {
+    m5_work_begin(0, 0);
+}
+
+void roi_end_()
+{
+    m5_work_end(0,0);
+}
+
+void thread_init_()
+{}
+
+#elif defined(GEM5FS)
+#include "gem5/m5ops.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+void annotate_init_()
+{}
+
+void region_begin_(const char* region)
+{}
+
+void region_end_(const char* region)
+{}
+
+void roi_begin_() {
+    char buf[256 * 1024];
+    int pid = getpid();
+    sprintf(buf,"cat /proc/%i/maps > proc_maps.txt;",pid);
+    printf("running %s\n",buf);
+    system(buf);
+    printf("ready to call m5 writefile\n");
+    system("m5 writefile proc_maps.txt;");
     m5_work_begin(0, 0);
 }
 

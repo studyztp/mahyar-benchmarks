@@ -1,11 +1,16 @@
-#! /bin/bash
+#!/bin/zsh
 
-export LD_LIBRARY_PATH=${PWD}/../roi/papi/install/lib:$LD_LIBRARY_PATH
-export PAPI_EVENTS="PAPI_L1_DCM,PAPI_L1_DCA,PAPI_L2_LDM,PAPI_L2_DCA,PAPI_L2_TCA,PAPI_L3_LDM,PAPI_L3_STM"
+# Check if an argument is provided
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 test_size"
+    exit 1
+fi
 
-export PAPI_OUTPUT_DIRECTORY=${PWD}/../data/azacca/cache_bandwidth/l1
-./cache_bandwidth.papi l1
-export PAPI_OUTPUT_DIRECTORY=${PWD}/../data/azacca/cache_bandwidth/l2
-./cache_bandwidth.papi l2
-export PAPI_OUTPUT_DIRECTORY=${PWD}/../data/azacca/cache_bandwidth/l3
-./cache_bandwidth.papi l3
+# Get the test size from the argument
+test_size=$1
+
+# Run the command 16 times
+for i in {1..16}
+do
+   ./reverse_engineer.native $test_size
+done

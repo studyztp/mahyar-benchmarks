@@ -17,7 +17,7 @@ ifeq ($(PLATFORM), papi)
 	ROI_OBJ+=-lpapi
 	ROI_OBJ+=-lpthread
 else ifeq ($(PLATFORM), gem5)
-	ROI_BIN+=$(ROI_DIR)/lib/roi.gem5
+	ROI_BIN+=$(ROI_DIR)/lib/roi.gem5fs
 	ROI_INC+=-I$(ROI_DIR)/gem5/include
 	ROI_LIB+=-L$(ROI_DIR)/gem5/lib
 	ROI_OBJ+=-lm5

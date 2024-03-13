@@ -8,6 +8,7 @@ extern "C" {
 #include "roi.h"
 }
 #endif //PAPI
+
 #ifndef ITERS_PER_TEST
 #define ITERS_PER_TEST 16384
 #endif // ITERS_PER_TEST
@@ -20,11 +21,9 @@ extern "C" {
 #define L2_SIZE_BYTES 1048576
 #endif // L2_SIZE_BYTES
 
-
 #ifndef L3_SIZE_BYTES
 #define L3_SIZE_BYTES 2097152
 #endif // L3_SIZE_BYTES
-
 
 void test(uint32_t cache_size, const std::string name)
 {
@@ -35,7 +34,8 @@ void test(uint32_t cache_size, const std::string name)
     std::mt19937 gen(rd());
     std::uniform_int_distribution<> dis(0, 128);
 
-    std::cout << "Initializing an array with " << num_elements << " uint32_t elements." << std::endl;
+    std::cout << "Initializing an array with "
+    << num_elements << " uint32_t elements." << std::endl;
     for (int i = 0; i < num_elements; i++) {
         array[i] = dis(gen);
     }
@@ -85,6 +85,7 @@ int main(int argc, char** argv)
     if (argc != 2) {
         std::cout << "To run the cache bandwidth test please use this binary "
         << "like below:" << "\n\tcache_bandwidth {l1, l2, l3}" << std::endl;
+        return 1;
     }
 
     std::string target = argv[1];
