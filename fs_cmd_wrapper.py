@@ -16,7 +16,9 @@ class BransonCommandWrapper(FSCommandWrapper):
     _base_input_path = "/home/ubuntu/benchmarks/branson/inputs"
     _input_translator = {
         "hohlraum_single": "3D_hohlraum_multi_node.xml",
+        "hohlraum_single_shrunk": "3D_hohlraum_single_node_shrunk.xml",
         "hohlraum_multi": "3D_hohlraum_multi_node.xml",
+        "hohlraum_multi_shrunk": "3D_hohlraum_multi_node_shrunk.xml",
     }
 
     def __init__(self, input_name: str):
