@@ -342,4 +342,52 @@ workloads = {
             )
         },
     ),
+    "CCa_aligned": WorkloadResource(
+        function="set_se_binary_workload",
+        parameters={
+            "binary": BinaryResource(
+                str(_base_dir / "microbench/CCa_aligned/bench.gem5")
+            )
+        },
+    ),
+    "CCe_aligned": WorkloadResource(
+        function="set_se_binary_workload",
+        parameters={
+            "binary": BinaryResource(
+                str(_base_dir / "microbench/CCe_aligned/bench.gem5")
+            )
+        },
+    ),
+    "CCh_aligned": WorkloadResource(
+        function="set_se_binary_workload",
+        parameters={
+            "binary": BinaryResource(
+                str(_base_dir / "microbench/CCh_aligned/bench.gem5")
+            )
+        },
+    ),
+    "CCh_st_aligned": WorkloadResource(
+        function="set_se_binary_workload",
+        parameters={
+            "binary": BinaryResource(
+                str(_base_dir / "microbench/CCh_st_aligned/bench.gem5")
+            )
+        },
+    ),
+    "CCl_aligned": WorkloadResource(
+        function="set_se_binary_workload",
+        parameters={
+            "binary": BinaryResource(
+                str(_base_dir / "microbench/CCl_aligned/bench.gem5")
+            )
+        },
+    ),
+    "CCm_aligned": WorkloadResource(
+        function="set_se_binary_workload",
+        parameters={
+            "binary": BinaryResource(
+                str(_base_dir / "microbench/CCm_aligned/bench.gem5")
+            )
+        },
+    ),
 }
