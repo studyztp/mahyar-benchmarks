@@ -13,3 +13,6 @@
 [submodule "UME"]
 	path = UME
 	url = https://github.com/mahyarsamani/UME.git
+[submodule "hpcg"]
+	path = hpcg
+	url = https://github.com/mahyarsamani/hpcg.git
