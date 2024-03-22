@@ -78,7 +78,15 @@ void thread_init_()
 #include <unistd.h>
 
 void annotate_init_()
-{}
+{
+    char buf[256 * 1024];
+    int pid = getpid();
+    sprintf(buf,"cat /proc/%i/maps > proc_maps.txt;",pid);
+    printf("running %s\n",buf);
+    system(buf);
+    printf("ready to call m5 writefile\n");
+    system("m5 writefile proc_maps.txt;");
+}
 
 void region_begin_(const char* region)
 {}
@@ -87,13 +95,6 @@ void region_end_(const char* region)
 {}
 
 void roi_begin_() {
-    char buf[256 * 1024];
-    int pid = getpid();
-    sprintf(buf,"cat /proc/%i/maps > proc_maps.txt;",pid);
-    printf("running %s\n",buf);
-    system(buf);
-    printf("ready to call m5 writefile\n");
-    system("m5 writefile proc_maps.txt;");
     m5_work_begin(0, 0);
 }
 

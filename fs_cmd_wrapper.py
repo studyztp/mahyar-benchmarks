@@ -16,14 +16,14 @@ class HPCGCommandWrapper(FSCommandWrapper):
 
     def __init__(
         self,
-        num_processors: int,
+        num_processes: int,
         dim_x: int,
         dim_y: int,
         dim_z: int,
         seconds: int,
     ):
         super().__init__("/home/ubuntu/benchmarks/hpcg/bin/xhpcg")
-        self._num_processors = num_processors
+        self._num_processes = num_processes
         self._x = dim_x
         self._y = dim_y
         self._z = dim_z
@@ -36,12 +36,13 @@ class HPCGCommandWrapper(FSCommandWrapper):
     def generate_cmdline(self):
         return (
             f"{self._write_dat}\n"
-            f"mpirun -n {self._num_processors} {self._binary_path}"
+            f"mpirun -n {self._num_processes} {self._binary_path}"
         )
 
     def generate_id_dict(self):
         return {
             "name": "hpcg",
+            "num_processes": self._num_processes,
             "dim_x": self._x,
             "dim_y": self._y,
             "dim_z": self._z,
@@ -58,9 +59,9 @@ class BransonCommandWrapper(FSCommandWrapper):
         "hohlraum_multi_shrunk": "3D_hohlraum_multi_node_shrunk.xml",
     }
 
-    def __init__(self, num_processors: int, input_name: str):
+    def __init__(self, num_processes: int, input_name: str):
         super().__init__("/home/ubuntu/benchmarks/branson/build/BRANSON")
-        self._num_processors = num_processors
+        self._num_processes = num_processes
         self._input_name = BransonCommandWrapper.input_translator[input_name]
         self._input_path = (
             f"{BransonCommandWrapper._base_input_path}/{self._input_name}"
@@ -68,12 +69,16 @@ class BransonCommandWrapper(FSCommandWrapper):
 
     def generate_cmdline(self):
         return (
-            f"mpirun -n {self._num_processors} "
+            f"mpirun -n {self._num_processes} "
             f"{self._binary_path} {self._input_path}"
         )
 
     def generate_id_dict(self):
-        return {"name": "branson", "input": self._input_name}
+        return {
+            "name": "branson",
+            "num_processes": self._num_processes,
+            "input": self._input_name,
+        }
 
 
 class UMECommandWrapper(FSCommandWrapper):
@@ -97,7 +102,11 @@ class UMECommandWrapper(FSCommandWrapper):
         )
 
     def generate_id_dict(self):
-        return {"name": "ume", "input": self._input_name}
+        return {
+            "name": "ume",
+            "num_processes": self._num_processes,
+            "input": self._input_name,
+        }
 
 
 class NPBCommandWrapper(FSCommandWrapper):
