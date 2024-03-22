@@ -12,6 +12,43 @@ class FSCommandWrapper:
         raise NotImplementedError
 
 
+class HPCGCommandWrapper(FSCommandWrapper):
+
+    def __init__(
+        self,
+        num_processors: int,
+        dim_x: int,
+        dim_y: int,
+        dim_z: int,
+        seconds: int,
+    ):
+        super().__init__("/home/ubuntu/benchmarks/hpcg/bin/xhpcg")
+        self._num_processors = num_processors
+        self._x = dim_x
+        self._y = dim_y
+        self._z = dim_z
+        self._secs = seconds
+        self._dat_content = (
+            f"\n\n{self._x} {self._y} {self._z}\n{self._secs}\n"
+        )
+        self._write_dat = f"echo {self._dat_content} > hpcg.dat;"
+
+    def generate_cmdline(self):
+        return (
+            f"{self._write_dat}\n"
+            f"mpirun -n {self._num_processors} {self._binary_path}"
+        )
+
+    def generate_id_dict(self):
+        return {
+            "name": "hpcg",
+            "dim_x": self._x,
+            "dim_y": self._y,
+            "dim_z": self._z,
+            "set time": self.secs,
+        }
+
+
 class BransonCommandWrapper(FSCommandWrapper):
     _base_input_path = "/home/ubuntu/benchmarks/branson/inputs"
     _input_translator = {
@@ -21,15 +58,19 @@ class BransonCommandWrapper(FSCommandWrapper):
         "hohlraum_multi_shrunk": "3D_hohlraum_multi_node_shrunk.xml",
     }
 
-    def __init__(self, input_name: str):
+    def __init__(self, num_processors: int, input_name: str):
         super().__init__("/home/ubuntu/benchmarks/branson/build/BRANSON")
+        self._num_processors = num_processors
         self._input_name = BransonCommandWrapper.input_translator[input_name]
         self._input_path = (
             f"{BransonCommandWrapper._base_input_path}/{self._input_name}"
         )
 
     def generate_cmdline(self):
-        return f"{self._binary_path} {self._input_path}"
+        return (
+            f"mpirun -n {self._num_processors} "
+            f"{self._binary_path} {self._input_path}"
+        )
 
     def generate_id_dict(self):
         return {"name": "branson", "input": self._input_name}
