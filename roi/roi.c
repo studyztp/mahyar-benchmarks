@@ -86,7 +86,7 @@ void annotate_init_()
     printf("running %s\n",buf);
     system(buf);
     printf("ready to call m5 writefile\n");
-    system("m5 writefile proc_maps.txt;");
+    system("m5 --addr 0x10010000 writefile proc_maps.txt;");
     printf("enable m5 address mode\n");
     m5op_addr = 0x10010000;
     map_m5_mem();
