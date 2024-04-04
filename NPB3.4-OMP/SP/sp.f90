@@ -151,7 +151,6 @@
        end do
        call timer_start(1)
        call annotate_init
-       call roi_begin
 
        do  step = 1, niter
 

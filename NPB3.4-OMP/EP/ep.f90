@@ -123,7 +123,6 @@
 
       call timer_start(1)
       call annotate_init
-      call roi_begin
 
       t1 = a
       call vranlc(0, t1, a, x)

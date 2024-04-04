@@ -191,7 +191,6 @@ int32 DC(ADC_VIEW_PARS *adcpp) {
    pvstp->totalNumberOfMadeViews = 0;
    pvstp->checksum = 0;
    annotate_init_();
-   roi_begin_();
 #ifdef _OPENMP
    adcpp->nTasks=omp_get_max_threads();
    fprintf(stdout,"\nNumber of available threads:  %d\n", adcpp->nTasks);

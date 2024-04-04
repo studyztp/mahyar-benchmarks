@@ -55,7 +55,6 @@
       end do
       call timer_start(1)
       call annotate_init
-      call roi_begin
 
 !---------------------------------------------------------------------
 !   the timestep loop

@@ -102,7 +102,6 @@
 
       call timer_start(T_total)
       call annotate_init
-      call roi_begin
       if (timers_enabled) call timer_start(T_setup)
 
       call compute_indexmap(twiddle, dims(1), dims(2), dims(3))

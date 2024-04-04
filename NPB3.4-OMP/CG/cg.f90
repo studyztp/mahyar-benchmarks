@@ -282,7 +282,7 @@
 
       call timer_start( T_bench )
       call annotate_init
-      call roi_begin
+
 !---------------------------------------------------------------------
 !---->
 !  Main Iteration for inverse power method

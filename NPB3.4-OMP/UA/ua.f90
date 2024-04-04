@@ -168,7 +168,6 @@
           end do
           call timer_start(1)
           call annotate_init
-          call roi_begin
         endif
 
 !.......advance the convection step
